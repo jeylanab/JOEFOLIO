@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.jpg'
 import { HiMenuAlt1 } from "react-icons/hi";
 import { navLinks } from '../constants/index'
 
 const NavBar = () => {
+
+    
+  
+  }
+
   return (
     <div>
       <div className='flex justify-between items-center'>
@@ -23,7 +28,7 @@ const NavBar = () => {
 
         {/* Responsive nav bar for small screen */}
         <div className=' lg:hidden flex'>
-           <HiMenuAlt1 className='menubar' />
+           <HiMenuAlt1 className='menubar ' />
         </div>
       </div>
     </div>
