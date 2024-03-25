@@ -21,7 +21,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className='contactMe lg:flex md:flex hidden'>
-            <button className='bg-black text-white h-[40px] w-[100px] rounded-md font-poppins font-semibold'>Contact</button>
+            <button className=' btn h-[40px] w-[100px] rounded-md font-poppins font-semibold'>Contact</button>
         </div>
 
         {/* Responsive nav bar for small screen */}

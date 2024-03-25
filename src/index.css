@@ -1,9 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --second-gradient: linear-gradient(
+    180deg,
+    var(--bg-color-alt) 0%,
+    var(--bg-color) 100%
+  );
+  --third-gradient: linear-gradient(
+    180deg,
+    var(--bg-color-alt) 0%,
+    var(--bg-color) 100%
+  );
+
+  /* TYPOGRAPHY */
+
+  --body-font: "Madimi One", sans-serif;
+  --second-font: "Mukta", sans-serif;
+  /* color */
+  --body-color: #5cdb95;
+  --text-color: #edf5e1;
+  --bg-color: #8ee4af;
+  --CTA-color: #053868;
+}
+.myName {
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+body {
+  background-color: var(--body-color);
+}
+.myC {
+  font-family: var(--body-font);
+}
+.toDo {
+  
+}
+.btn {
+  background-color: var(--CTA-color);
+  color: var(--text-color);
+}
+.helloStart {
+  font-family: var(--second-font);
+}
+.whatdo {
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
 
 :root {
   --black-gradient: linear-gradient(
@@ -18,7 +66,58 @@
 * {
   scroll-behavior: smooth;
 }
-.meee {
-  font-family: var(--body-font);
-  stroke-width: 1px;
+
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
 }
