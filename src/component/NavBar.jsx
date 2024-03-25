@@ -5,9 +5,7 @@ import { navLinks } from '../constants/index'
 
 const NavBar = () => {
 
-    
-  
-  
+
 
   return (
     <div>

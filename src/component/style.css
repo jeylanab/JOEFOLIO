@@ -1,0 +1,23 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+:root{
+
+    --second-gradient: linear-gradient( 180deg,
+            var(--bg-color-alt) 0%, 
+            var(--bg-color) 100%
+     );
+     --third-gradient: linear-gradient( 180deg,
+            var(--bg-color-alt) 0%, 
+            var(--bg-color) 100%
+     );
+
+     /* TYPOGRAPHY */
+
+     --body-font: "Madimi One", sans-serif;
+     --second-font: "Mukta", sans-serif;
+        }
+.myName {
+    font-family: var(--body-font)
+}
+

@@ -4,18 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
- 
-
-:root{
-
-     /* TYPOGRAPHY */
-
-     --body-font: "Madimi One", sans-serif;
-     --second-font: "Palanquin", sans-serif;
-        }
-
-
 
 :root {
   --black-gradient: linear-gradient(
@@ -30,8 +18,7 @@
 * {
   scroll-behavior: smooth;
 }
-.menubar {
- 
- stroke-width: 1px;
+.meee {
+  font-family: var(--body-font);
+  stroke-width: 1px;
 }
-
