@@ -7,7 +7,7 @@ const NavBar = () => {
 
     
   
-  }
+  
 
   return (
     <div>
