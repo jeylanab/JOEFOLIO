@@ -3,7 +3,10 @@ import NavBar from "./component/NavBar";
 
 const App = () => (
   <div >
-    <NavBar/>
+    <div className="lg:m-10 m-3 ">
+      <NavBar/>
+      
+    </div>
   </div>
 );
 

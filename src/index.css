@@ -17,4 +17,7 @@
 * {
   scroll-behavior: smooth;
 }
-
+.menubar {
+ 
+ stroke-width: 1px;
+}
