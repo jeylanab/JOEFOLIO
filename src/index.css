@@ -184,3 +184,23 @@ body {
     }
   }
 }
+
+.mySkill {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mySkillSwiper {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.mySkillSwiper img {
+  align-items: center;
+  display: block;
+  width: 300px;
+  height: 300px;
+}

@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+import {  html, javascript, css, adobexd, figma, jquery, react,  tailwind,  vue } from './index'
 
-import { FaHtml5 } from "react-icons/fa";
 
 
 
@@ -14,21 +19,51 @@ const Skill = () => {
               
           </div>
           <div className=' flex items-center justify-center'>
-            <div class="grid grid-cols-3  gap-4">
-                  <div class="col-span-3 md:col-span-1">
-                     
-                      
-                  </div>
-                <div class="col-span-3 md:col-span-1 ">CSS3</div>
-                <div class="col-span-3 md:col-span-1">JavaScript</div>
-                <div class="col-span-3 md:col-span-1">React.Js</div>
-                <div class="col-span-3 md:col-span-1">Vue.Js</div>
-                <div class="col-span-3 md:col-span-1">JQuery</div>
-                <div class="col-span-3 md:col-span-1">React.Js</div>
-                <div class="col-span-3 md:col-span-1">TailWind</div>
-                <div class="col-span-3 md:col-span-1">Figma</div>
-               
-             </div>
+                    <Swiper className= 'mySkill'
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                    }}
+                    pagination={true}
+                    modules={[EffectCoverflow, Pagination]}
+                   
+                >
+                  <SwiperSlide className='mySkillSwiper'>
+                      <img src={html} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide className='mySkillSwiper'>
+                      <img src={  css } />
+                    </SwiperSlide>
+                    <SwiperSlide className='mySkillSwiper'>
+                      <img src={ javascript} />
+                    </SwiperSlide>
+                    <SwiperSlide className='mySkillSwiper'>
+                    <img src={react} />
+                    </SwiperSlide>
+                    <SwiperSlide className='mySkillSwiper'>
+                    <img src={jquery} />
+                    </SwiperSlide>
+                    <SwiperSlide className='mySkillSwiper'>
+                    <img src={vue} />
+                    </SwiperSlide>
+                    <SwiperSlide className='mySkillSwiper'>
+                      <img src={ tailwind} />
+                    </SwiperSlide>
+                    <SwiperSlide className='mySkillSwiper'>
+                      <img src={figma } />
+                    </SwiperSlide>
+                    <SwiperSlide className='mySkillSwiper'>
+                      <img src={adobexd } />
+                    </SwiperSlide>
+                </Swiper>
+            
           </div>
          
           
