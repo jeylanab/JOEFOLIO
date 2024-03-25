@@ -3,6 +3,7 @@ import logo from '../assets/logo.jpg'
 import { HiMenuAlt1 } from "react-icons/hi";
 import { navLinks } from '../constants/index'
 
+
 const NavBar = () => {
 
 

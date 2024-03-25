@@ -5,13 +5,13 @@ const Project = () => {
   return (
       <div>
             <div className='whatDo font-semibold lg:text-4xl text-3xl text-center py-10'>My Projects</div>
-            <div className='projectcard flex justify-center items-center'>
+            <div className='projectcard flex  justify-center items-center'>
                 <div className='grid grid-cols-1 lg:grid-cols-3  gap-4'>
                     {Projects.map((project, index) => (
-                    <div className='m-10 border bg-emerald-500 rounded-md text-center p-3 relative' key={index}>
-                        <div className='whatDo text-3xl'>{project.title}</div>
+                    <div className='m-10 border bg-emerald-500 shadow-lg shadow-black rounded-md text-center p-3 relative' key={index}>
+                        <div className='whatDo text-3xl py-3'>{project.title}</div>
                         <div>{project.description}</div>
-                        <div>
+                        <div className='py-3'>
                             <span className='whatDo'>Technologies: <br /> </span>
                             {project.Technologies}
                         </div>
@@ -21,9 +21,9 @@ const Project = () => {
                         src={project.imageUrl}
                         alt={project.title}
                             />
-                            <div className='linkes flex z-20 justify-between items-end items-baseline m-10 content-end'>
-                                <div className='border p-2 rounded-md'>Deployed</div>      
-                                <div className='border p-2 rounded-md'>Repository</div>      
+                            <div className='linkes flex z-20 justify-between  items-baseline m-5 content-end'>
+                                <div className='border p-2 whatDo rounded-md'>Deployed</div>      
+                                <div className='border p-2 whatDo rounded-md'>Repository</div>      
                              </div>
                     </div> 
                     ))}
