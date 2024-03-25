@@ -24,6 +24,7 @@
   --second-font: "Mukta", sans-serif;
   /* color */
   --body-color: #5cdb95;
+
   --text-color: #edf5e1;
   --bg-color: #8ee4af;
   --CTA-color: #053868;
@@ -39,7 +40,6 @@ body {
   font-family: var(--body-font);
 }
 .toDo {
-  
 }
 .btn {
   background-color: var(--CTA-color);
@@ -66,7 +66,6 @@ body {
 * {
   scroll-behavior: smooth;
 }
-
 
 .swiper {
   width: 240px;
@@ -129,7 +128,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  .lii{
+  .lii {
     list-style: none;
     a {
       position: relative;
