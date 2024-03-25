@@ -3,6 +3,7 @@ import NavBar from "./component/NavBar";
 import Hero from "./component/Hero";
 import ToDo from "./component/ToDo";
 import Skill from "./component/Skill";
+import Project from "./component/Project";
 
 const App = () => (
   <div >
@@ -12,7 +13,8 @@ const App = () => (
     </div>
 
     <ToDo />
-    <Skill/>
+    <Skill />
+    <Project/>
 
   </div>
 );
