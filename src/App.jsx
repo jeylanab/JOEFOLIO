@@ -2,6 +2,7 @@ import styles from "./style";
 import NavBar from "./component/NavBar";
 import Hero from "./component/Hero";
 import ToDo from "./component/ToDo";
+import Skill from "./component/Skill";
 
 const App = () => (
   <div >
@@ -11,6 +12,7 @@ const App = () => (
     </div>
 
     <ToDo />
+    <Skill/>
 
   </div>
 );

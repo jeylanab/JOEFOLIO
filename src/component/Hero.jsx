@@ -26,6 +26,7 @@ const Hero = () => {
                       <div className="imgHolder">
                           <img src={jeylan} alt="jeylan pic" className='lg:w-[1100px] m-auto rounded-full' />
                       </div>
+                      <div className="backG  lg:w-[400px] h-[400px] rounded-full bg-emerald-950 absolute bottom-4 right-3 -z-10"></div>
                   </div>
               </div>
           </div>
