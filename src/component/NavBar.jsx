@@ -14,9 +14,9 @@ const NavBar = () => {
            <img src={logo} alt="jeylan logo"  className='w-[60px]  sm:w-26' />
         </div>
         <div className='menuList lg:flex  md:flex hidden'>
-          <ul className='flex'>
+          <ul className='flex uul'>
             {navLinks.map((menu, index) => (
-              <li className='ml-10 font-poppins' key={menu.id}>{ menu.title}</li>
+              <li className='ml-10 font-poppins lii' key={menu.id}> <a href="#">{ menu.title}</a></li>
             ))}
           </ul>
         </div>

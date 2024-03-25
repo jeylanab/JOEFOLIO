@@ -10,8 +10,8 @@ const Hero = () => {
                   <div className="left">
                       <div className='info '>
                          <h1 className='helloStart lg:text-left font-semibold text-center text-2xl text-black my-5'> <span className='helloJ'>Hello,</span> My Name Is</h1>
-                          <h1 className='myName lg:text-8xl text-4xl lg:text-left  my-5 text-center'>Jeylan <span className='text-black'>A Tesi</span>  </h1> 
-                          <h2 className='lg:text-left text-center myC text-lg  my-5'>Web Developer / Web Designer</h2>
+                          <h1 className='myName lg:text-8xl text-4xl lg:text-left  my-5 text-center '>Jeylan <span className='text-black'>A Tesi</span>  </h1> 
+                          <h2 className='lg:text-left text-center myC my-5 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5  font-bold'>Web Developer / Web Designer</h2>
                       </div>
 
 
