@@ -23,9 +23,9 @@
   --body-font: "Madimi One", sans-serif;
   --second-font: "Mukta", sans-serif;
   /* color */
-  --body-color: #5cdb95;
+  --body-color: #f8f8f8;
 
-  --text-color: #edf5e1;
+  --text-color: #0ab13f;
   --bg-color: #8ee4af;
   --CTA-color: #053868;
 }
@@ -49,7 +49,7 @@ body {
   font-family: var(--second-font);
 }
 .whatDo {
-  color: var(--text-color);
+  color: rgb(39, 40, 39);
   font-family: var(--body-font);
 }
 
@@ -204,10 +204,9 @@ body {
   height: 300px;
 }
 .network {
-  
+  width: full;
   margin: 50px;
-  color: rgb(28, 104, 235);
+  color: rgb(35, 184, 12);
 }
 .footer {
-  width: full;
 }
