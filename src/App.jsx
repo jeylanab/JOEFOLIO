@@ -4,6 +4,7 @@ import Hero from "./component/Hero";
 import ToDo from "./component/ToDo";
 import Skill from "./component/Skill";
 import Project from "./component/Project";
+import About from "./component/About";
 
 const App = () => (
   <div >
@@ -14,7 +15,8 @@ const App = () => (
 
     <ToDo />
     <Skill />
-    <Project/>
+    <Project />
+    <About/>
 
   </div>
 );
