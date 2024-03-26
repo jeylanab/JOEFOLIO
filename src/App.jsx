@@ -5,6 +5,7 @@ import ToDo from "./component/ToDo";
 import Skill from "./component/Skill";
 import Project from "./component/Project";
 import About from "./component/About";
+import Footer from "./component/Footer";
 
 const App = () => (
   <div >
@@ -16,7 +17,8 @@ const App = () => (
     <ToDo />
     <Skill />
     <Project />
-    <About/>
+    <About />
+    <Footer/>
 
   </div>
 );

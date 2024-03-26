@@ -203,3 +203,11 @@ body {
   width: 300px;
   height: 300px;
 }
+.network {
+  
+  margin: 50px;
+  color: rgb(28, 104, 235);
+}
+.footer {
+  width: full;
+}
