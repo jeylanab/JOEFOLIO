@@ -35,13 +35,16 @@ export const Projects = [
     title: "Job Nest",
     description: "Job Nest is a job search platform that helps users find employment opportunities based on their skills, experience, and location. It provides features such as job listings, resume uploading, and application tracking.",
     Technologies: "HTML, CSS, JavaScript (including Vanilla JS and jQuery), React.js, Bootstrap, Firebase (for authentication and data storage)",
-    imageUrl: haveWord
+    imageUrl: haveWord,
+    link: "https://havaword.netlify.app/"
   },
   {
     title: "Have A Word",
     description: "Have A Word is a dictionary and translation web application with quiz functionality. It allows users to search for words, view definitions, translations, and example sentences. Additionally, users can test their knowledge with quizzes on vocabulary and language proficiency.",
     Technologies: "HTML, CSS, JavaScript, React.js, Tailwind CSS, and other relevant technologies.",
-    imageUrl: haveWord
+    imageUrl: haveWord,
+    link: "https://havaword.netlify.app/"
+
   }
   ,
   {
