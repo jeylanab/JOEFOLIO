@@ -5,26 +5,26 @@ const Project = () => {
   return (
       <div>
             <div className='whatDo font-semibold lg:text-4xl text-3xl text-center py-10'>My Projects</div>
-            <div className='projectcard flex  justify-center items-center'>
+            <div className='projectcard flex   justify-center items-center'>
                 <div className='grid grid-cols-1 lg:grid-cols-3  gap-4'>
                     {Projects.map((project, index) => (
-                    <div className='m-10 border bg-emerald-500 shadow-lg shadow-black rounded-md text-center p-3 relative' key={index}>
-                        <div className='whatDo text-3xl py-3'>{project.title}</div>
-                        <div>{project.description}</div>
-                        <div className='py-3'>
-                            <span className='whatDo'>Technologies: <br /> </span>
-                            {project.Technologies}
-                        </div>
-                        {/* Image element for project picture */}
-                        <img
-                        className='absolute top-0 left-0 w-full h-full rounded-md object-cover opacity-0 hover:opacity-100 transition-opacity duration-300'
-                        src={project.imageUrl}
-                        alt={project.title}
-                            />
-                            <div className='linkes flex z-20 justify-between  items-baseline m-5 content-end'>
-                                <div className='border p-2 whatDo rounded-md'>Deployed</div>      
-                                <div className='border p-2 whatDo rounded-md'>Repository</div>      
-                             </div>
+                        <div className=' bgcard border shadow-lg shadow-black rounded-md flex items-center flex-col-reverse justify-center m-3' key={index}>
+                            <div className='left  m-3'>
+                                <div className='whatDo text-2xl '>{project.title}</div>
+                                <div className='font-poppins text-sm font-light'>{project.description}</div>
+                                <div className=' font-poppins text-sm font-light'>
+                                    <span className='whatDo '>Technologies: <br /> </span>
+                                    {project.Technologies}
+                                </div>
+                            </div>
+                            <div className='right'>
+                                <a href=""> <img
+                                className=''
+                                src={project.imageUrl}
+                                alt={project.title}
+                                    /></a>
+                               
+                            </div>
                     </div> 
                     ))}
                 </div>
