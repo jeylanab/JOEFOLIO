@@ -28,7 +28,8 @@ export const Projects = [
     title: "Save Food",
     description: "Save Food is a web application designed to reduce food waste by connecting individuals and businesses with excess food to those in need. Users can create listings for food donations, search for available donations, and coordinate pick-up or delivery.",
     Technologies: "HTML, CSS, JavaScript (including Vanilla JS and jQuery), React.js, Bootstrap, Tailwind CSS, Firebase (for authentication and data storage)",
-    imageUrl: savefood
+    imageUrl: savefood,
+    link: "https://savefoods.netlify.app/#home"
   },
   {
     title: "Job Nest",

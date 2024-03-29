@@ -18,7 +18,7 @@ const Project = () => {
                                 </div>
                             </div>
                             <div className='right'>
-                                <a href=""> <img
+                                <a href={project.link}> <img
                                 className=''
                                 src={project.imageUrl}
                                 alt={project.title}
