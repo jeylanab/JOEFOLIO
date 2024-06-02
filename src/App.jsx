@@ -9,8 +9,12 @@ import Footer from "./component/Footer";
 
 const App = () => (
   <div >
-    <div className="lg:m-10 m-3 ">
+    <div  className="">
+      <div className="">
         <NavBar />
+
+      </div>
+       
         <Hero />
     </div>
 

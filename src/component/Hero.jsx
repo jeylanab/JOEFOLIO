@@ -4,8 +4,21 @@ import jeylan from '../assets/jeylan.png'
 
 const Hero = () => {
   return (
-     <div>
-          <div className="hero">
+      <div className=' flex justify-center items-center'>
+          <div className='m-20'>
+              <h1 className=' text-center myName myC '> <span className=''>Hello,</span> My Name Is</h1>
+              <h1 className=' myName lg:text-7xl text-4xl   my-5 text-center '>Jeylan <span className='text-black'>A Tesi</span>  </h1> 
+              <h2 className='text-center myC my-5 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white'>Web Developer / Web Designer</h2>
+              <p className=' text-center'>Frontend Developer with a solid background in UX/UI design. I specialize in creating dynamic and user-friendly interfaces that seamlessly blend functionality with aesthetics.</p>
+
+              
+          </div>
+          <div>
+                  <div className="backG  lg:w-[400px] h-[400px] rounded-full bg-emerald-950 "></div> 
+              
+          </div>
+
+          {/* <div className="hero">
               <div className='sides lg:flex block justify-center items-center'>
                   <div className="left">
                       <div className='info '>
@@ -29,7 +42,7 @@ const Hero = () => {
                       <div className="backG  lg:w-[400px] h-[400px] rounded-full bg-emerald-950 absolute bottom-4 right-3 -z-10"></div>
                   </div>
               </div>
-          </div>
+          </div> */}
 
     </div>
   )

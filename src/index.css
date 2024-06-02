@@ -83,7 +83,7 @@ body {
 }
 
 .swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+  background-color: hsla(34, 88%, 52%, 0.561);
 }
 
 .swiper-slide:nth-child(2n) {
@@ -127,11 +127,10 @@ body {
   margin: 50px;
   color: rgb(35, 184, 12);
 }
-.footer {
-}
+
 .bgcard {
   background-color: #83fc4b;
 }
-.Skill {
-  
+.mynav {
+  background-color: chocolate;
 }
