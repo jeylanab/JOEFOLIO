@@ -14,13 +14,13 @@ class Skill extends Component {
           }
         },
         xaxis: {
-          categories: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'TypeScript', 'Next.js', 'GraphQL']
+          categories: ['JavaScript', 'CSS', 'HTML', 'React', 'Node.js', 'TypeScript', 'Next.js', 'GraphQL']
         }
       },
       series: [
         {
           name: "percentage",
-          data: [90, 85, 80, 80, 75, 70, 60, 60] // Example percentages, adjust as needed
+          data: [80, 85, 85, 80, 75, 70, 60, 60] // Example percentages, adjust as needed
         }
       ]
     };
