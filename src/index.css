@@ -83,7 +83,7 @@ body {
 }
 
 .swiper-slide:nth-child(1n) {
-  background-color: hsla(34, 88%, 52%, 0.561);
+  background-color: hsl(34, 85%, 44%);
 }
 
 .swiper-slide:nth-child(2n) {
@@ -132,5 +132,5 @@ body {
   background-color: #83fc4b;
 }
 .mynav {
-  background-color: chocolate;
+  background-color: hsla(98, 96%, 57%, 0.857);
 }
