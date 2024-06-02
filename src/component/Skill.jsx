@@ -8,7 +8,10 @@ class Skill extends Component {
     this.state = {
       options: {
         chart: {
-          id: "basic-bar"
+          id: "basic-bar",
+          toolbar: {
+            show: false // Disable the toolbar to remove the download icon
+          }
         },
         xaxis: {
           categories: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'TypeScript', 'Next.js', 'GraphQL']
@@ -16,8 +19,8 @@ class Skill extends Component {
       },
       series: [
         {
-          name: "series-1",
-          data: [90, 85, 80, 95, 75, 70, 60, 50] // Example percentages, adjust as needed
+          name: "percentage",
+          data: [90, 85, 80, 80, 75, 70, 60, 60] // Example percentages, adjust as needed
         }
       ]
     };
@@ -25,8 +28,9 @@ class Skill extends Component {
 
   render() {
     return (
-      <div className="Skill">
-        <div className="row">
+      <div className="Skill m-10 lg:m-10 ">
+         <h2 className='whatDo font-semibold lg:text-4xl text-center text-3xl p-5'>Skills</h2>
+        <div className="row  flex justify-center">
           <div className="mixed-chart">
             <Chart
               options={this.state.options}
