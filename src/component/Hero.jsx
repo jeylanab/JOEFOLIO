@@ -4,7 +4,7 @@ import jeylan from '../assets/jeylan.png'
 
 const Hero = () => {
   return (
-      <div className=' flex justify-center items-center'>
+      <div className=' flex justify-center items-center         '>
           <div className='m-20'>
               <h1 className=' text-center myName myC '> <span className=''>Hello,</span> My Name Is</h1>
               <h1 className=' myName lg:text-7xl text-4xl   my-5 text-center '>Jeylan <span className='text-black'>A Tesi</span>  </h1> 
