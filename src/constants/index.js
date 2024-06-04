@@ -3,25 +3,26 @@ import quiz from '../assets/quiz.png'
 import toDo from '../assets/toDo.png'
 import weather from '../assets/weather.png'
 import savefood from '../assets/savefood.png'
+
+
 export const navLinks = [
   {
-    id: "Home",
+    id: "home",
     title: "Home",
   },
   {
-    id: "Skills",
-    title: "Skills",
+    id: "features",
+    title: "Features",
   },
   {
-    id: "Projects",
-    title: "Projects",
+    id: "product",
+    title: "Product",
   },
   {
-    id: "About",
-    title: "About",
+    id: "clients",
+    title: "Clients",
   },
 ];
-
 
 export const Projects = [
   {

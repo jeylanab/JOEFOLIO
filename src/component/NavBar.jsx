@@ -9,7 +9,7 @@ const NavBar = () => {
 
 
   return (
-    <div className=' mynav'>
+    <div className=' '>
       <div className='flex justify-between items-center'>
         <div className='logoSection  '>
            <img src={logo} alt="jeylan logo"  className='w-[200px] ' />
