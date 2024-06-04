@@ -7,14 +7,17 @@ import 'swiper/css/effect-cards';
 
 
 const ToDo = () => {
-  return (
-      <div className='toDo'>
-          
+    return (<div>
+
           <div className='title flex justify-center items-center my-10'>
               <h2 className='whatDo font-semibold lg:text-4xl text-3xl p-5'>What I Will Do</h2>
           </div>
+      
+  
+      <div className='toDo  sm:flex '>
           
-
+          
+          <div className=' sm:w-[50vw] '>
           <Swiper
         effect={'cards'}
         grabCursor={true}
@@ -87,11 +90,20 @@ const ToDo = () => {
                          </p>
                       </div>
                   </div></SwiperSlide>
-      </Swiper>
+        </Swiper>
+              
+          </div>
+            <div>
+                ehllodsfg
+              
+          </div>
+
+          
 
 
 
-    </div>
+        </div>
+ </div>
   )
 }
 
