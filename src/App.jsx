@@ -1,29 +1,8 @@
-import styles from "./style";
-import NavBar from "./component/NavBar";
-import Hero from "./component/Hero";
-import ToDo from "./component/ToDo";
-import Skill from "./component/Skill";
-import Project from "./component/Project";
-import About from "./component/About";
-import Footer from "./component/Footer";
+import React from "react";
 
 const App = () => (
   <div >
-    <div  className="">
-      <div className="">
-        <NavBar />
-
-      </div>
-       
-        <Hero />
-    </div>
-
-    <ToDo />
-    <Skill />
-    <Project />
-    <About />
-    <Footer />
-
+        <div className="bg-black">Hello</div>
   </div>
 );
 
