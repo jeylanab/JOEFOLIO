@@ -22,7 +22,7 @@ body{
     font-family: var(--primary-font);
 }
 .hero {
-    font-size: 3.5rem; 
+    font-size: 4.5rem; 
     font-weight: var(--font-weight-extra-bold);
   }
   
@@ -61,3 +61,47 @@ body{
     border-radius: 20px;
 
   }
+
+.myshadow {
+  text-shadow: 2px 2px 7px #0de715;
+}
+.imgshadow {
+  box-shadow: 1px 4px 6px #0de715;
+}
+.jey {
+  font-weight: var(--font-weight-bold);
+  color: #0de715;
+
+}
+/* .cta {
+  position: absolute;
+  bottom: 20px;
+} */
+.btn-1 {
+  color: var(--secondary-color);
+  font-weight: var(--font-weight-bold);
+  border: 2px solid #0de715;
+  background-color: #0de715;
+  padding: 7px;
+  transition: 0.5s;
+ 
+}
+
+.btn-1:hover {
+ background-color: var(--body-color);
+  box-shadow: 4px 2px 8px #0de715 ;
+
+}
+.btn-2 {
+  box-shadow: 4px 2px 8px #0de715 ;
+  margin-left: 10px;
+  color: var(--secondary-color);
+  font-weight: var(--font-weight-bold);
+  border: 2px solid #0de715;
+  padding: 7px;
+  transition: 0.5s;
+}
+.btn-2:hover {
+    background-color: #0de715;
+
+}

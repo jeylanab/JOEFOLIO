@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import navLinks from '../constants';
+import { navLinks } from '../constants';
 import logo from "../Assets/logo.svg"
 import menu from "../Assets/menu.svg"
 
@@ -32,7 +32,7 @@ const NavBar = () => {
           <img className='' src={logo} alt="logo" />
           <img onClick={toggleMenu} src={menu} alt="menu" />
           {isMenuOpen && (
-          <div className="absolute top-16 right-0 bg-white shadow-lg opacity-60 mt-2 py-2 w-48 rounded-lg">
+          <div className="absolute top-16 right-0 bg-white shadow-lg opacity-80 mt-2 py-2 w-48 rounded-lg">
               <ul>
                 {navLinks.map((value, index) => (
                   <li className='' >
