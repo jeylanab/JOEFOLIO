@@ -11,8 +11,7 @@ const Hero = () => {
               <h1 className='text-5xl lg:text-9xl font-bold myshadow'>WebDesigner</h1>
               <img className='w-[400px] mt-10 absolute imgshadow top-20' src={jeylan} alt="" />
           </div> 
-                 
-      
+              
       </div>
   )
 }

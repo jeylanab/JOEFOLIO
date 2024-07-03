@@ -20,7 +20,7 @@ const NavBar = () => {
           <ul className='flex justify-center items-center '>
             {navLinks.map((navlink, index) => (
             <li key={index}>
-                <a className='text-white pl-10 paragraph menus' href={navlink.link}>{navlink.title}</a>
+                <a className='text-white pl-10 paragraph font-bold menus' href={navlink.link}>{navlink.title}</a>
             </li>
             ))}
           </ul>
