@@ -1,8 +1,9 @@
 import React from "react";
+import NavBar from "./component/NavBar";
 
 const App = () => (
   <div >
-        <div className="bg-black">Hello</div>
+    <NavBar/>
   </div>
 );
 
