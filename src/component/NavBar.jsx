@@ -1,6 +1,7 @@
 import React from 'react';
 import navLinks from '../constants';
 import logo from "../Assets/logo.svg"
+import menu from "../Assets/menu.svg"
 
 
 const NavBar = () => {
@@ -19,8 +20,9 @@ const NavBar = () => {
               <div className='contact'>Contact</div>
           </div>
         </div>
-        <div className='sm:hidden flex'>
-            <img className='' src={logo} alt="logo" />
+        <div className='sm:hidden flex items-center justify-between p-5'>
+          <img className='' src={logo} alt="logo" />
+          <img src={menu} alt="menu" />
 
         </div>
         
