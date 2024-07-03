@@ -14,11 +14,8 @@ const navLinks = [
     {
       title: "About",
       link: "/about"
-    },
-    {
-      title: "Contact",
-      link: "/contact"
     }
+   
   ];
   
   export default navLinks;
