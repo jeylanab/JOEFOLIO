@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import navLinks from '../constants'; // Automatically looks for index.js
 
 const NavBar = () => {
   return (
-    <div>NavBar</div>
-  )
-}
+    <div>
+      <ul>
+        {navLinks.map((navlink, index) => (
+          <li key={index}>
+            <a href={navlink.link}>{navlink.title}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-export default NavBar
+export default NavBar;
