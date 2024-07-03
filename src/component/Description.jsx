@@ -13,7 +13,7 @@ const Description = () => {
           
              
             </div>
-            <div className='  flex justify-center items-center  m-10 '>
+            <div className='  flex justify-center items-center  m-10 mb-10 '>
               <button className='btn-1'> <a href="">Explore Projects</a> </button>
               <button className='btn-2'> <a href="">Get in Touch</a> </button>
           </div>
