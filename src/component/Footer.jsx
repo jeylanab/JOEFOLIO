@@ -12,7 +12,7 @@ const Footer = () => {
           </h1>
           <div className='flex lg:flex-row flex-col justify-center items-center text-white'>
               {footerLinks.map((value, index) => (
-                  <a className='ml-10 mr-10 hover:text-amber-500' href={value.link}>{ value.title }</a>
+                  <a className='ml-10 mr-10 hover:text-zinc-500' href={value.link}>{ value.title }</a>
 
                 ))}
           </div>
