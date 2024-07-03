@@ -1,10 +1,18 @@
 import React from 'react';
+import { useState } from 'react';
 import navLinks from '../constants';
 import logo from "../Assets/logo.svg"
 import menu from "../Assets/menu.svg"
 
 
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+      console.log('jeylan')
+    };
+  
     return (
     <div>
       <div className='hidden justify-between items-center lg:flex'>    
@@ -22,7 +30,18 @@ const NavBar = () => {
         </div>
         <div className='sm:hidden flex items-center justify-between p-5'>
           <img className='' src={logo} alt="logo" />
-          <img src={menu} alt="menu" />
+          <img onClick={toggleMenu} src={menu} alt="menu" />
+          {isMenuOpen && (
+          <div className="absolute top-16 right-0 bg-white shadow-lg mt-2 py-2 w-48 rounded-lg">
+              <ul>
+                {navLinks.map((value, index) => (
+                  <li className='' >
+                    <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200"  href={value.link}>{value.title}</a></li>
+                  
+                   ))}
+              </ul>
+        </div>
+      )}
 
         </div>
         
