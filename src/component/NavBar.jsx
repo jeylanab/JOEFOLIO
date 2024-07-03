@@ -6,8 +6,8 @@ import logo from "../Assets/logo.svg"
 const NavBar = () => {
   return (
       <div className='flex justify-between items-center bg-slate-800'>    
-          <img className='' src={logo} alt="" />
-        <ul className='flex justify-center items-center'>
+          <img className='m-5' src={logo} alt="" />
+        <ul className='flex justify-center items-center m-5'>
             {navLinks.map((navlink, index) => (
             <li key={index}>
                 <a className='text-white pl-10' href={navlink.link}>{navlink.title}</a>
