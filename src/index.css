@@ -17,6 +17,10 @@
     --font-weight-extra-light: 200;
 
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     background-color: #052B0D;
     font-family: var(--primary-font);
