@@ -1,5 +1,6 @@
 import React from 'react'
 import quote from "../Assets/quote.svg"
+import { Link } from 'react-router-dom'
 
 const Description = () => {
     return (
@@ -14,8 +15,8 @@ const Description = () => {
              
             </div>
             <div className='  flex justify-center items-center  m-10 mb-10 '>
-              <button className='btn-1'> <a href="">Explore Projects</a> </button>
-              <button className='btn-2'> <a href="">Get in Touch</a> </button>
+              <button className='btn-1'> <Link  to="/projects">Explore Projects</Link> </button>
+              <button className='btn-2'> <Link to="/contact">Get in Touch</Link> </button>
           </div>
       </div>
       

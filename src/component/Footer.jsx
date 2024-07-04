@@ -7,7 +7,7 @@ import fiverr from "../Assets/fiverr.png"
 
 const Footer = () => {
   return (
-      <div className='bg-black text-white text-center w-full'>
+      <div className='bg-black text-white text-center w-full '>
           <h1 className='p-10 font-semibold'>JOEFOLIO
           </h1>
           <div className='flex lg:flex-row flex-col justify-center items-center text-white'>

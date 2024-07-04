@@ -1,15 +1,15 @@
 export const navLinks = [
     {
       title: "Home",
-      link: "/home"
+      link: "/hero"
     },
     {
       title: "Project",
-      link: "/project"
+      link: "/projects"
     },
     {
       title: "Skill",
-      link: "/skill"
+      link: "/skills"
     },
     {
       title: "About",

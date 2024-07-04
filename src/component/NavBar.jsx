@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { navLinks } from '../constants';
 import logo from "../Assets/logo.svg"
 import menu from "../Assets/menu.svg"
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -20,7 +21,7 @@ const NavBar = () => {
           <ul className='flex justify-center items-center '>
             {navLinks.map((navlink, index) => (
             <li key={index}>
-                <a className='text-white pl-10 paragraph font-bold menus' href={navlink.link}>{navlink.title}</a>
+                <Link className='text-white pl-10 paragraph font-bold menus' to={navlink.link}>{navlink.title}</Link>
             </li>
             ))}
           </ul>
@@ -36,7 +37,7 @@ const NavBar = () => {
               <ul>
                 {navLinks.map((value, index) => (
                   <li className='' >
-                    <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200 subtitle"  href={value.link}>{value.title}</a></li>
+                    <Link className="block px-4 py-2 text-gray-800 hover:bg-gray-200 subtitle"  to={value.link}>{value.title}</Link></li>
                   
                    ))}
               </ul>
