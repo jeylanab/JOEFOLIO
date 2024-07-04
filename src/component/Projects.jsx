@@ -73,14 +73,14 @@ const Projects = () => {
         {Object.keys(sections).map(section => (
           <p
             key={section}
-            className={`btn-2 ${selectedSection === section ? 'active' : ''}`}
+            className={`btn-2 ${selectedSection === section ? 'active, btn-1' : ''}`}
             onClick={() => setSelectedSection(section)}
           >
             {section}
           </p>
         ))}
       </div>
-      <div className='p-20 max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+      <div className='p-20 m-10 max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
         {sections[selectedSection].map((project, index) => (
           <div key={index} className='project '>
             <h3 className='title'>{project.title}</h3>
