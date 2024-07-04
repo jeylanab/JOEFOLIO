@@ -1,12 +1,53 @@
 import React from 'react'
 import man from "../Assets/man.svg"
+import savefood from "../Assets/savefood.svg"
+import joevibe from "../Assets/joevibe.svg"
+import haveaword from "../Assets/haveaword.svg"
+import { useState } from 'react';
 
 const Projects = () => {
+  
+   const [selectedSection, setSelectedSection] = useState('Frontend');
+
+  const sections = {
+    'Frontend': [
+      //UX/UI Design projects
+      {
+      title: 'SaveFood',
+      description: 'A platform designed to reduce food waste by connecting restaurants with surplus food to local communities in need.',
+      imageUrl: savefood
+    },
+    {
+      title: 'Have a Word',
+      description: 'An innovative language learning app that uses gamification and interactive exercises to help users master new languages.',
+      imageUrl:haveaword
+    },
+    {
+      title: 'Job Nest',
+      description: 'A job search engine that uses AI to match candidates with their ideal job based on skills, preferences, and experiences.',
+      imageUrl: savefood
+    },
+    {
+      title: 'JoeVibe',
+      description: 'A social media platform that allows users to share their music playlists, discover new tunes, and connect with fellow music enthusiasts.',
+      imageUrl: joevibe
+    }
+    ],
+    'UX/UI Design': [
+      // Add your Frontend projects here
+    ],
+    'Backend': [
+      // Add your Backend projects here
+    ],
+    'MERN Stack': [
+      // Add your MERN Stack projects here
+    ]
+  };
   return (
     
     <div className='text-white'>
       <div className=' flex lg:flex-row flex-col justify-center items-center m-10'>
-          <div className='highlights m-10'>
+          <div className='highlights m-10 text-center'>
             <h1 className='font-bold myshadow btn-1 mb-5'>Project Highlights</h1>
               <p className=''>😄Innovative</p>
               <p> 😄User-Friendly</p>
@@ -17,7 +58,7 @@ const Projects = () => {
               <p>😄Frontend</p>
           </div>
           <img className=' w-60 ' src={man} alt="man in a hood" />
-          <div className='acheivements m-10'>
+          <div className='acheivements m-10 text-center'>
             <h1 className='font-bold myshadow btn-1 mb-5' >Achievements</h1>
               <p> 🎯 20+ Clients</p>
               <p> 🎯 50+ Projects</p>
@@ -28,11 +69,25 @@ const Projects = () => {
 
       </div>
       <h1 className=' text-center title  p-10 myshadow'>My Work Samples</h1>
-      <div className='list-items flex justify-center items-center'>
-        <p className='btn-2'>UX/UI Design</p>
-        <p className='btn-2'>Frontend</p>
-        <p className='btn-2'>Backend</p>
-        <p className='btn-2'>MERN Stack</p>
+      <div className='list-items flex justify-center items-center text-sm lg:text-lg my-10'>
+        {Object.keys(sections).map(section => (
+          <p
+            key={section}
+            className={`btn-2 ${selectedSection === section ? 'active' : ''}`}
+            onClick={() => setSelectedSection(section)}
+          >
+            {section}
+          </p>
+        ))}
+      </div>
+      <div className='p-20 max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+        {sections[selectedSection].map((project, index) => (
+          <div key={index} className='project '>
+            <h3 className='title'>{project.title}</h3>
+            <p className=' my-5'>{project.description}</p>
+            <img className='imgshadow' src={project.imageUrl} alt={project.title} />
+          </div>
+        ))}
       </div>
 
       
