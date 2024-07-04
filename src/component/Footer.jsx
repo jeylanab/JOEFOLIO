@@ -1,7 +1,6 @@
 import React from 'react'
 import { footerLinks } from '../constants'
 import linkedin from "../Assets/linkedin.png"
-import twitter from "../Assets/twitter.png"
 import github from "../Assets/github.svg"
 import fiverr from "../Assets/fiverr.png"
 
@@ -18,7 +17,6 @@ const Footer = () => {
           </div>
           <div className='flex  justify-center items-center p-5'>
               <a className='icon m-5' href=""><img src={linkedin} alt="" /></a>
-              <a className='icon m-5' href=""><img src={twitter} alt="" /></a>
               <a className='icon m-5' href=""><img src={github} alt="" /></a>
               <a className='icon m-5' href=""><img src={fiverr} alt="" /></a>
           
