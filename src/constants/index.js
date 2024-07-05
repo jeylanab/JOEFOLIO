@@ -12,6 +12,8 @@ import mysql from "../Assets/mysql.svg";
 import photoshop from "../Assets/photoshop.svg";
 import react from "../Assets/react.svg";
 import wordpress from "../Assets/wordpress.svg";
+import node from "../Assets/node.svg";
+import vue from "../Assets/vue.svg";
 import Xd from "../Assets/Xd.svg";
 
 // Export navLinks array
@@ -70,4 +72,6 @@ export {
   photoshop,
   wordpress,
   Xd,
+  node,
+  vue,
 };
