@@ -33,7 +33,19 @@ const Skills = () => {
         image: css,
         title: "CSS3",
         level: "Advanced"
+      },
+          {
+        image: bootstrap,
+        title: "Bootstrap",
+        level: "Advanced"
+      },
+          {
+        image: css,
+        title: "CSS3",
+        level: "Advanced"
       }
+      
+      
       
       
     ],
@@ -49,18 +61,28 @@ const Skills = () => {
         level: "Intermediate"
       },
         {
-        image: "",
-        title: "",
-        level: ""
+        image: photoshop,
+        title: "Adobe Photoshop",
+        level: "Intermediate"
       },
          {
-        image: "",
-        title: "",
-        level: ""
+        image: Xd,
+        title: "Adobe Xd",
+        level: "Intermediate"
       }
      
     ],
     'Backend': [
+      {
+        image: node,
+        title: "Node Js",
+        level: "Intermediate"
+      },
+      {
+        image: node,
+        title: "Node Js",
+        level: "Intermediate"
+      }
       
     ],
     'Tools': [
@@ -74,7 +96,11 @@ const Skills = () => {
         title: "Github",
         level: "Intermediate"
       },
-      
+      {
+        image: wordpress,
+        title: "Wordpress",
+        level: "Intermediate"
+      }
     ]
   };
   return (
@@ -98,8 +124,8 @@ const Skills = () => {
           <div key={index} className='project m-5 '>  
             <img className='imgshadow' src={skill.image} alt={skill.title} />
             <div className=' flex justify-start items-center'>
-               <h3 className=' text-white'>{skill.title}</h3>
-                <p className=' text-white mx-5'>{skill.level}</p>
+               <h3 className=' text-white font-bold'>{skill.title}</h3>
+                <p className=' text-white mx-5 maincolor '>{skill.level}</p>
             </div>
             
           </div>
