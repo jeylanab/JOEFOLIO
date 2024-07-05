@@ -1,10 +1,22 @@
-// import html from "../Assets/html.svg";
-// import javascript from "../Assets/javascript.svg";
-// import css from "../Assets/css.svg";
-// import react from "../Assets/react.svg";
-// import node from "../Assets/node.svg";
-// import express from "../Assets/express.svg";
-// import mongodb from "../Assets/mongodb.svg";
+
+import javascript from "../Assets/javascript.svg";
+import css from "../Assets/css.svg";
+import react from "../Assets/react.svg";
+import bootstrap from "../Assets/bootstrap.svg"
+import figma from "../Assets/figma.svg";
+import git from "../Assets/git.svg";
+import github from "../Assets/github.svg";
+import illustrator from "../Assets/illustrator.svg";
+import java from "../Assets/java.svg";
+import javascript from '../Assets/javascript.svg';
+import mongodb from "../Assets/mongodb.svg";
+import mysql from "../Assets/mysql.svg";
+import photoshop from "../Assets/photoshop.svg";
+import react from "../Assets/react.svg";
+import wordpress from "../Assets/wordpress.svg";
+
+
+import mongodb from "../Assets/mongodb.svg";
 
 
 
