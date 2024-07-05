@@ -125,7 +125,7 @@ const Skills = () => {
             <img className='imgshadow' src={skill.image} alt={skill.title} />
             <div className=' flex justify-start items-center'>
                <h3 className=' text-white font-bold'>{skill.title}</h3>
-                <p className=' text-white mx-5 maincolor '>{skill.level}</p>
+                <p className=' text-white mx-5 maincolor font-light '>{skill.level}</p>
             </div>
             
           </div>
