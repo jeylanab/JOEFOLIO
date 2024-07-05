@@ -53,7 +53,7 @@ const Projects = () => {
               <p>😄Backend</p>
               <p>😄Frontend</p>
           </div>
-          <img className=' w-60 ' src={man} alt="man in a hood" />
+          <img className=' w-60 anime-2' src={man} alt="man in a hood" />
           <div className='acheivements m-10 text-center'>
             <h1 className='font-bold myshadow btn-1 mb-5' >Achievements</h1>
               <p> 🎯 20+ Clients</p>

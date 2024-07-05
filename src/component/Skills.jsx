@@ -122,7 +122,7 @@ const Skills = () => {
       <div className='max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
         {sections[selectedSkill].map((skill, index) => (
           <div key={index} className='project m-5 '>  
-            <img className='imgshadow' src={skill.image} alt={skill.title} />
+            <img className='imgshadow skill-hover ' src={skill.image} alt={skill.title} />
             <div className=' flex justify-start items-center'>
                <h3 className=' text-white font-bold'>{skill.title}</h3>
                 <p className=' text-white mx-5 maincolor font-light '>{skill.level}</p>
