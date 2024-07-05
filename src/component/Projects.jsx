@@ -11,7 +11,6 @@ const Projects = () => {
 
   const sections = {
     'Frontend': [
-      //UX/UI Design projects
       {
       title: 'SaveFood',
       description: 'A platform designed to reduce food waste by connecting restaurants with surplus food to local communities in need.',
@@ -34,13 +33,10 @@ const Projects = () => {
     }
     ],
     'UX/UI Design': [
-      // Add your Frontend projects here
     ],
     'Backend': [
-      // Add your Backend projects here
     ],
     'MERN Stack': [
-      // Add your MERN Stack projects here
     ]
   };
   return (
