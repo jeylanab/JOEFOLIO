@@ -80,9 +80,9 @@ const Projects = () => {
           </p>
         ))}
       </div>
-      <div className='p-20 m-10 max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+      <div className='p-20 m-10 lg:w-[900px] md:[900px] w-[400px] max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
         {sections[selectedSection].map((project, index) => (
-          <div key={index} className='project '>
+          <div key={index} className='project m-5 '>
             <h3 className='title'>{project.title}</h3>
             <p className=' my-5'>{project.description}</p>
             <img className='imgshadow' src={project.imageUrl} alt={project.title} />

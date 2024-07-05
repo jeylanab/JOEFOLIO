@@ -2,7 +2,10 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div className=' my-10'>
+    <div className=''>
+      <div className=''>
+        Languages and Skills
+      </div>
       
       
     
