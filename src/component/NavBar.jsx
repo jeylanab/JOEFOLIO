@@ -17,7 +17,7 @@ const NavBar = () => {
     return (
     <div>
       <div className='hidden justify-between items-center lg:flex'>    
-          <img className='m-10' src={logo} alt="logo" />
+          <Link to={navLinks[0].link}><img className='m-10' src={logo} alt="logo" /></Link>
           <ul className='flex justify-center items-center '>
             {navLinks.map((navlink, index) => (
             <li key={index}>

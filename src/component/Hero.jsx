@@ -2,6 +2,7 @@ import React from 'react'
 import jeylan from "../Assets/jeylan.png"
 
 
+
 const Hero = () => {
   return (
       <div className=''>

@@ -3,6 +3,7 @@ import { footerLinks } from '../constants'
 import linkedin from "../Assets/linkedin.png"
 import github from "../Assets/github.svg"
 import fiverr from "../Assets/fiverr.png"
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           </h1>
           <div className='flex lg:flex-row flex-col justify-center items-center text-white'>
               {footerLinks.map((value, index) => (
-                  <a className='ml-10 mr-10 hover:text-zinc-500' href={value.link}>{ value.title }</a>
+                  <Link className='ml-10 mr-10 hover:text-zinc-500' to={value.link}>{ value.title }</Link>
 
                 ))}
           </div>

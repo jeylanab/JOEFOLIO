@@ -48,11 +48,11 @@ export const footerLinks = [
   },
   {
     title: "Freelance Service",
-    link: "/freelance-service"
+    link: "/contact"
   },
   {
     title: "Terms",
-    link: "/terms"
+    link: "/about"
   }
 ];
 

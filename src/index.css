@@ -109,6 +109,9 @@ body{
     background-color: #0de715;
 
 }
+.bg {
+ background-color: var(--primary-color);
+}
 .maincolor {
   color: var(--primary-color);
 }
