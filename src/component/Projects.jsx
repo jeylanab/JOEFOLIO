@@ -43,7 +43,7 @@ const Projects = () => {
     
     <div className='text-white'>
       <div className=' flex lg:flex-row flex-col justify-center items-center m-10'>
-          <div className='highlights m-10 text-center'>
+          <div className='highlights m-10 text-center anime-l'>
             <h1 className='font-bold myshadow btn-1 mb-5'>Project Highlights</h1>
               <p className=''>😄Innovative</p>
               <p> 😄User-Friendly</p>
@@ -54,8 +54,8 @@ const Projects = () => {
               <p>😄Frontend</p>
           </div>
           <img className=' w-60 anime-2' src={man} alt="man in a hood" />
-          <div className='acheivements m-10 text-center'>
-            <h1 className='font-bold myshadow btn-1 mb-5' >Achievements</h1>
+          <div className='acheivements m-10 text-center anime-r'>
+            <h1 className='font-bold myshadow btn-1 mb-5 anime' >Achievements</h1>
               <p> 🎯 20+ Clients</p>
               <p> 🎯 50+ Projects</p>
               <p> 🎯 5⭐ rate on fiverr</p>
@@ -64,8 +64,8 @@ const Projects = () => {
           </div>
 
       </div>
-      <h1 className=' text-center title  p-10 myshadow'>My Work Samples</h1>
-      <div className='list-items flex justify-center items-center text-sm lg:text-lg my-10'>
+      <h1 className=' text-center title  p-10 myshadow anime-l'>My Work Samples</h1>
+      <div className='list-items flex justify-center items-center text-sm lg:text-lg my-10 anime-2'>
         {Object.keys(sections).map(section => (
           <p
             key={section}
@@ -76,7 +76,7 @@ const Projects = () => {
           </p>
         ))}
       </div>
-      <div className='p-20 m-10 lg:w-[900px] md:[900px] w-[400px] max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+      <div className='anime-r p-20 m-10 lg:w-[900px] md:[900px] w-[400px] max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
         {sections[selectedSection].map((project, index) => (
           <div key={index} className='project m-5 '>
             <h3 className='title'>{project.title}</h3>
@@ -92,4 +92,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

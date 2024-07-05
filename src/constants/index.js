@@ -57,21 +57,5 @@ export const footerLinks = [
 ];
 
 // Export all imported assets together
-export {
-  javascript,
-  css,
-  react,
-  bootstrap,
-  figma,
-  git,
-  github,
-  illustrator,
-  java,
-  mongodb,
-  mysql,
-  photoshop,
-  wordpress,
-  Xd,
-  node,
-  vue,
+export { javascript, css, react, bootstrap, figma, git, github, illustrator, java,mongodb, mysql, photoshop, wordpress, Xd, node,vue,
 };

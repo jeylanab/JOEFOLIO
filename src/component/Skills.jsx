@@ -108,6 +108,7 @@ const Skills = () => {
       <div className=' text-white title myshadow text-center'>
         Languages and Skills
       </div>
+      {/* mapping through the button of the skill section */}
       <div className='list-items flex justify-center items-center text-sm lg:text-lg my-10'>
         {Object.keys(sections).map(section => (
           <p
@@ -119,6 +120,7 @@ const Skills = () => {
           </p>
         ))}
       </div>
+      {/* mapping through the object of the skill */}
       <div className='max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
         {sections[selectedSkill].map((skill, index) => (
           <div key={index} className='project m-5 '>  
