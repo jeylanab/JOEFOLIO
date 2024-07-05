@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import Xd from "../Assets/Xd.svg"
+import {
+  javascript, css,react, bootstrap, figma, git, github, illustrator, java, mongodb, mysql, photoshop, wordpress, Xd,} from '../constants/index.js';
 
 
 const Skills = () => {
@@ -9,7 +10,7 @@ const Skills = () => {
   const sections = {
     'Frontend': [
       {
-        image: Xd,
+        image: javascript,
         title: "Adobe",
         level: "low"
       },
