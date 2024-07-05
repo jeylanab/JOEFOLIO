@@ -128,14 +128,19 @@ opacity: 0.5;
   animation: fadeIn 2s forwards; 
   
 } 
-.anime-3 {
+.anime-h {
   opacity: 0; 
-  animation: fadeIn 1s forwards; 
+  animation: slideInFromRight 1s forwards; 
   
 }
 .anime-2 {
   opacity: 0; 
   animation: fadeIn 1.5s forwards; 
+  
+}
+.anime-h {
+  opacity: 0; 
+  animation: slideInFromRight 1.5s forwards; 
   
 }
 @keyframes fadeIn {
@@ -146,5 +151,26 @@ opacity: 0.5;
   100% {
     opacity: 1;
     transform: translateY(45);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
