@@ -138,9 +138,14 @@ opacity: 0.5;
   animation: fadeIn 1.5s forwards; 
   
 }
-.anime-h {
+.anime-r {
   opacity: 0; 
   animation: slideInFromRight 1.5s forwards; 
+  
+}
+.anime-l {
+  opacity: 0; 
+  animation: slideInFromLeft 1.5s forwards; 
   
 }
 @keyframes fadeIn {
