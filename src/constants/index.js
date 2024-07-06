@@ -2,7 +2,6 @@
 import javascript from "../Assets/javascript.svg";
 import css from "../Assets/css.svg";
 import bootstrap from "../Assets/bootstrap.svg";
-import figma from "../Assets/figma.svg";
 import git from "../Assets/git.svg";
 import github from "../Assets/github.svg";
 import illustrator from "../Assets/illustrator.svg";
@@ -57,5 +56,5 @@ export const footerLinks = [
 ];
 
 // Export all imported assets together
-export { javascript, css, react, bootstrap, figma, git, github, illustrator, java,mongodb, mysql, photoshop, wordpress, Xd, node,vue,
+export { javascript, css, react, bootstrap, git, github, illustrator, java,mongodb, mysql, photoshop, wordpress, Xd, node,vue,
 };

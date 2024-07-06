@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import {
-  javascript, css,react, bootstrap, figma, git, github, illustrator, java, mongodb, node, vue, mysql, photoshop, wordpress, Xd,} from '../constants/index.js';
+  javascript, css,react, bootstrap, git, github, illustrator, java, mongodb, node, vue, mysql, photoshop, wordpress, Xd,} from '../constants/index.js';
 
 
 const Skills = () => {
@@ -51,7 +51,7 @@ const Skills = () => {
     ],
     'Design': [
        {
-        image: figma,
+        image: Xd,
         title: "Figma",
         level: "Intermediate"
       },
