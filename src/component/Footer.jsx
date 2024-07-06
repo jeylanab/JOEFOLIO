@@ -6,7 +6,8 @@ import fiverr from "../Assets/fiverr.png"
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
-  return (
+    return (
+    //   footer component is visible on all the the route
       <div className='bg-black text-white text-center w-full '>
           <h1 className='p-10 font-semibold'>JOEFOLIO
           </h1>
