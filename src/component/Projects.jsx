@@ -42,8 +42,8 @@ const Projects = () => {
   return (
     
     <div className='text-white'>
-      <div className=' flex lg:flex-row flex-col justify-center items-center m-10'>
-          <div className='highlights m-10 text-center anime-l'>
+      <div className=' flex lg:flex-row flex-col justify-center items-center m-10 '>
+          <div className='highlights m-10 text-center anime-l border myshadow'>
             <h1 className='font-bold myshadow btn-1 mb-5'>Project Highlights</h1>
               <p className=''>😄Innovative</p>
               <p> 😄User-Friendly</p>
@@ -54,7 +54,7 @@ const Projects = () => {
               <p>😄Frontend</p>
           </div>
           <img className=' w-60 anime-2' src={man} alt="man in a hood" />
-          <div className='acheivements m-10 text-center anime-r'>
+          <div className='acheivements m-10 text-center anime-r border myshadow'>
             <h1 className='font-bold myshadow btn-1 mb-5 anime' >Achievements</h1>
               <p> 🎯 20+ Clients</p>
               <p> 🎯 50+ Projects</p>
