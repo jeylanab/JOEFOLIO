@@ -6,7 +6,7 @@ import jeylan from "../Assets/jeylan.png"
 const Hero = () => {
   return (
       <div className=''>
-          <div className='text-white text-center flex flex-col items-center justify-center'>
+          <div className='text-white text-center flex flex-col items-center justify-cente '>
              <h1 className='text-white text-center paragraph  mt-10 anime'>Hello! My Name Is <span className='jey'>Jeylan A</span></h1>
              <h1 className='text-5xl lg:text-9xl font-bold myshadow anime-r'>WebDeveloper</h1>
               <h1 className='text-5xl lg:text-9xl font-bold myshadow anime-l'>WebDesigner</h1>

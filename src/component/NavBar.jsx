@@ -29,11 +29,11 @@ const NavBar = () => {
               <div className='contact'>Contact</div>
           </div>
         </div>
-        <div className='sm:hidden flex items-center justify-between p-5'>
+        <div className='sm:hidden flex items-center justify-between p-5 z-20'>
           <img className='' src={logo} alt="logo" />
           <img onClick={toggleMenu} src={menu} alt="menu" />
           {isMenuOpen && (
-          <div className="absolute top-16 right-0 bg-white shadow-lg opacity-80 mt-2 py-2 w-48 rounded-lg">
+          <div className="absolute top-16 right-0 bg-white shadow-lg opacity-90 mt-2 py-2 w-48 rounded-lg z-20 ">
               <ul>
                 {navLinks.map((value, index) => (
                   <li className='' >
