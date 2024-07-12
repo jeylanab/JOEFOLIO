@@ -182,3 +182,16 @@ opacity: 0.5;
     transform: translateX(0);
   }
 }
+
+.card-contact {
+
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  border-right: 3px solid #0ae120; /* Add border to the right side */
+}
+
+.card-contact:hover {
+ transition: .5s;
+ background-color: #0ae120;
+} 
