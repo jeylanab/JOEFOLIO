@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { navLinks } from '../constants';
+import { navLinks , footerLinks } from '../constants';
 import logo from "../Assets/logo.svg"
 import menu from "../Assets/menu.svg"
 import { Link } from 'react-router-dom';
@@ -26,7 +26,7 @@ const NavBar = () => {
             ))}
           </ul>
           <div className='m-10 text-white'>
-              <div className='contact'>Contact</div>
+              <div className='contact'> <Link to={footerLinks[1].link}>Contact</Link> </div>
           </div>
         </div>
         <div className='sm:hidden flex items-center justify-between p-5 z-20'>
