@@ -1,5 +1,7 @@
 import React from 'react'
 
+// contact component of the app
+
 const Contact = () => {
   return (
     <div className='text-white'> 
