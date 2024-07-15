@@ -5,7 +5,6 @@ import css from "../Assets/css.svg";
 import bootstrap from "../Assets/bootstrap.svg";
 import git from "../Assets/git.svg";
 import github from "../Assets/github.svg";
-import illustrator from "../Assets/illustrator.svg";
 import java from "../Assets/java.svg";
 import mongodb from "../Assets/mongodb.svg";
 import mysql from "../Assets/mysql.svg";
@@ -68,7 +67,7 @@ const Skills = () => {
         level: "Intermediate"
       },
        {
-        image: illustrator,
+        image: photoshop,
         title: "Adobe Illustrator",
         level: "Intermediate"
       },
