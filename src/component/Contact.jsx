@@ -23,7 +23,6 @@ const Contact = () => {
              <h1>Email</h1>
              <p>contact me on joephoenix755@gmail.com</p>
         </div>
-      
       </div>
       
       <div>

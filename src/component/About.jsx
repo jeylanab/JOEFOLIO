@@ -10,9 +10,9 @@ const About = () => {
       <div className=' title  text-white myshadow text-center mt-10'>
         About Me
       </div>
-      <div className=' lg:flex md:flex block items-center justify-center rounded-lg bg opacity-80 m-5 lg:m-20'>
-        <img className='w-[300px] anime-2 ' src={jeylan} alt="" />
-        <div className=' text-white m-5 myshadow'> 💧Hi! I'm Jeylan Abdo, a computer science student and a specialized MERN stack developer with a focus on frontend development. I have completed a MERN stack bootcamp and have extensive experience working on React, UI/UX design projects. I've successfully delivered both solo and team-based projects, combining creativity and technical skills to create engaging and user-friendly web applications. I'm passionate about building innovative solutions and constantly enhancing my expertise.
+      <div className=' lg:flex md:flex block items-center justify-center rounded-lg bg opacity-100 m-5 lg:m-20'>
+          <img className='w-[300px] anime-2 ' src={jeylan} alt="" />
+        <div className=' text-white m-5 myshadow paragraph'> 💧Hi! I'm Jeylan Abdo, a computer science student and a specialized MERN stack developer with a focus on frontend development. I have completed a MERN stack bootcamp and have extensive experience working on React, UI/UX design projects. I've successfully delivered both solo and team-based projects, combining creativity and technical skills to create engaging and user-friendly web applications. I'm passionate about building innovative solutions and constantly enhancing my expertise.
         
 
     
