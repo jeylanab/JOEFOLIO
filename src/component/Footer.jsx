@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           <div className='flex  justify-center items-center p-5'>
               <a className='icon m-5' href=""><img src={linkedin} alt="" /></a>
-              <a className='icon m-5' href=""><img src={github} alt="" /></a>
+              <a className='icon m-5' href=""><img src={linkedin} alt="" /></a>
               <a className='icon m-5' href=""><img src={fiverr} alt="" /></a>
           
           </div>
