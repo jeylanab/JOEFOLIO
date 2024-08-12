@@ -3,7 +3,7 @@ import { useState } from 'react';
 import {javascript,css,react,bootstrap,
   git,
   github,
-  illustrator,
+  ill,
   java,
   mongodb,
   mysql,
@@ -29,7 +29,7 @@ const Skills = () => {
         ],
         'Design': [
             { image: Xd, title: "Figma", level: "Intermediate" },
-            { image: shop, title: "Adobe Illustrator", level: "Intermediate" },
+            { image: ill, title: "Adobe Illustrator", level: "Intermediate" },
             { image: shop, title: "Adobe Photoshop", level: "Intermediate" },
             { image: Xd, title: "Adobe Xd", level: "Intermediate" }
         ],
