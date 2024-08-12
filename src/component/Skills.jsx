@@ -1,45 +1,30 @@
-import React from 'react';
-import { useState } from 'react';
-import {javascript,css,react,bootstrap,
-  git,
-  github,
-  ill,
-  java,
-  mongodb,
-  mysql,
-  shop,
-  wordpress,
-  Xd,
-  node,
-  vue,
-} from "../constants/index.js"
-
+import React, { useState } from 'react';
 
 const Skills = () => {
     const [selectedSkill, setSelectedSkill] = useState('Frontend');
 
     const sections = {
         'Frontend': [
-            { image: javascript, title: "JavaScript", level: "Advanced" },
-            { image: react, title: "React Js", level: "Intermediate" },
-            { image: node, title: "Node Js", level: "Intermediate" },
-            { image: vue, title: "Vue Js", level: "Intermediate" },
-            { image: css, title: "CSS3", level: "Advanced" },
-            { image: bootstrap, title: "Bootstrap", level: "Advanced" }
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', title: "JavaScript", level: "Advanced" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', title: "React Js", level: "Intermediate" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', title: "Node Js", level: "Intermediate" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg', title: "Vue Js", level: "Intermediate" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', title: "CSS3", level: "Advanced" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg', title: "Bootstrap", level: "Advanced" }
         ],
         'Design': [
-            { image: Xd, title: "Figma", level: "Intermediate" },
-            { image: ill, title: "Adobe Illustrator", level: "Intermediate" },
-            { image: shop, title: "Adobe Photoshop", level: "Intermediate" },
-            { image: Xd, title: "Adobe Xd", level: "Intermediate" }
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', title: "Figma", level: "Intermediate" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg', title: "Adobe Illustrator", level: "Intermediate" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg', title: "Adobe Photoshop", level: "Intermediate" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg', title: "Adobe Xd", level: "Intermediate" }
         ],
         'Backend': [
-            { image: node, title: "Node Js", level: "Intermediate" }
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', title: "Node Js", level: "Intermediate" }
         ],
         'Tools': [
-            { image: git, title: "Git", level: "Intermediate" },
-            { image: github, title: "Github", level: "Intermediate" },
-            { image: wordpress, title: "Wordpress", level: "Intermediate" }
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', title: "Git", level: "Intermediate" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', title: "Github", level: "Intermediate" },
+            { image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg', title: "Wordpress", level: "Intermediate" }
         ]
     };
 
@@ -70,7 +55,7 @@ const Skills = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </div> 
     );
 };
 

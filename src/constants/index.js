@@ -1,19 +1,4 @@
 // Ensure there are no duplicate imports
-import javascript from "../Assets/javascript.svg";
-import css from "../Assets/css.svg";
-import bootstrap from "../Assets/bootstrap.svg";
-import git from "../Assets/git.svg";
-import github from "../Assets/github.svg";
-import ill from "../Assets/illustrator.svg";
-import java from "../Assets/java.svg";
-import mongodb from "../Assets/mongodb.svg";
-import mysql from "../Assets/mysql.svg";
-import shop from "../Assets/shop.svg";
-import react from "../Assets/react.svg";
-import wordpress from "../Assets/wordpress.svg";
-import node from "../Assets/node.svg";
-import vue from "../Assets/vue.svg";
-import Xd from "../Assets/Xd.svg"; 
 
 // Export navLinks array
 export const navLinks = [
@@ -56,20 +41,3 @@ export const footerLinks = [
 ];
 
 // Export all imported assets together
-export {
-  javascript,
-  css,
-  react,
-  bootstrap,
-  git,
-  github,
-  ill,
-  java,
-  mongodb,
-  mysql,
-  shop,
-  wordpress,
-  Xd,
-  node,
-  vue,
-};
