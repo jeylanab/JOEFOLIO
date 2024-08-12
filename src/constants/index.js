@@ -8,7 +8,7 @@ import illustrator from "../Assets/illustrator.svg";
 import java from "../Assets/java.svg";
 import mongodb from "../Assets/mongodb.svg";
 import mysql from "../Assets/mysql.svg";
-import photoshop from "../Assets/photoshop.svg";
+import shop from "../Assets/shop.svg";
 import react from "../Assets/react.svg";
 import wordpress from "../Assets/wordpress.svg";
 import node from "../Assets/node.svg";
@@ -67,7 +67,7 @@ export {
   java,
   mongodb,
   mysql,
-  photoshop,
+  shop,
   wordpress,
   Xd,
   node,
