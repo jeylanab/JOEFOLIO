@@ -8,7 +8,7 @@ import github from "../Assets/github.svg";
 import java from "../Assets/java.svg";
 import mongodb from "../Assets/mongodb.svg";
 import mysql from "../Assets/mysql.svg";
-import photoshop from "../Assets/photoshop.svg";
+import shop from "../Assets/shop.svg";
 import react from "../Assets/react.svg";
 import wordpress from "../Assets/wordpress.svg";
 import node from "../Assets/node.svg";
@@ -29,8 +29,8 @@ const Skills = () => {
         ],
         'Design': [
             { image: Xd, title: "Figma", level: "Intermediate" },
-            { image: photoshop, title: "Adobe Illustrator", level: "Intermediate" },
-            { image: photoshop, title: "Adobe Photoshop", level: "Intermediate" },
+            { image: shop, title: "Adobe Illustrator", level: "Intermediate" },
+            { image: shop, title: "Adobe Photoshop", level: "Intermediate" },
             { image: Xd, title: "Adobe Xd", level: "Intermediate" }
         ],
         'Backend': [
