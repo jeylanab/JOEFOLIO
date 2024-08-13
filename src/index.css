@@ -46,7 +46,8 @@ body{
   }
   
   .extra-small {
-    font-size: 0.9rem; 
+    text-align: left;
+    font-size: 0.7rem; 
     font-weight: var(--font-weight-extra-light);
   }
 
