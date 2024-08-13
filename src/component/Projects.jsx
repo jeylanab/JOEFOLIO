@@ -38,9 +38,9 @@ const Projects = () => {
         githubLink: 'https://github.com/yourusername/joevibe'
       }
     ],
-    'UX/UI Design': [],
+    'Design': [],
     'Backend': [],
-    'MERN Stack': []
+    'FullStack': []
   };
 
   return (
@@ -70,7 +70,7 @@ const Projects = () => {
         {Object.keys(sections).map(section => (
           <p
             key={section}
-            className={`btn-2 ${selectedSection === section ? 'active btn-1' : ''}`}
+            className={`btn-2 ${selectedSection === section ? 'active btn-1' : ''} sm:extra-small`}
             onClick={() => setSelectedSection(section)}
           >
             {section}

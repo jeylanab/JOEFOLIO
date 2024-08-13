@@ -7,14 +7,18 @@ const Footer = () => {
    const currentYear = new Date().getFullYear();
   return (
     <div className='bg-black text-white text-center w-full '>
-      <div className='flex justify-around items-center p-5'>
-        <div className='flex-grow basis-0'>
-          <div className=''>
+      <div className='p-5'>
            <Link to="/"><img src={logo} alt="logo" /></Link> 
-          </div>
-            <p className='extra-small'>Hi! My name ia Jeylan A Tesi expert in web Development and design.<br/>
-            I can help you make your website more attractive</p>
-          
+      </div>
+      <div className='flex justify-around items-center px-5'>
+        <div className='flex-grow basis-0'>
+          <h4 className='text-left'>Expertise</h4>
+          <ul>
+             <li className='extra-small'> <Link to="/projects">JavaScript & React</Link> </li>
+             <li className='extra-small'> <Link to="/projects">HTML & CSS</Link></li>
+             <li className='extra-small'> <Link to="/about">Node.js & Express</Link></li>
+             <li className='extra-small'> <Link to="/contact">Figma & Adobe XD</Link></li>
+          </ul>
         </div>
         <div className='flex-grow basis-0 p-5'>
           <h4 className='text-left'>Service</h4>
