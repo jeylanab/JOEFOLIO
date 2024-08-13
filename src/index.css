@@ -210,9 +210,8 @@ opacity: 0.5;
  transition: .5s;
  background-color: #0ae120;
 } 
-.lighting {
- border-radius: 100%;
 
- background-color: whitesmoke;
- 
+.probg {
+ background-color: hsl(120, 100%, 99%);
+color: #052B0D;
 }

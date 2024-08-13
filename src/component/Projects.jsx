@@ -61,7 +61,7 @@ const Projects = () => {
         {sections[selectedSection].map((project, index) => (
           <div 
             key={index} 
-            className='project m-5 relative group'
+            className='project m-5 relative group probg'
             style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '10px', overflow: 'hidden' }}
           >
             <h3 className='title'>{project.title}</h3>
@@ -78,24 +78,30 @@ const Projects = () => {
           </div>
         ))}
       </div>
-        <div className=' flex lg:flex-row flex-col justify-center items-center m-10 '>
+        <div className=' flex lg:flex-row flex-col justify-center items-start m-10 '>
         <div className='highlights m-10 text-center anime-l border myshadow'>
-          <h1 className='font-bold myshadow btn-1 mb-5'>Project Highlights</h1>
-          <p>😄Innovative</p>
-          <p>😄User-Friendly</p>
-          <p>😄Scalable</p>
-          <p>😄Responsive</p>
-          <p>😄UX/UI Design</p>
-          <p>😄Backend</p>
-          <p>😄Frontend</p>
+          <h1 className='font-bold myshadow btn-1 mb-5 '>Project Highlights</h1>
+          <div className='text-left'>
+            <p>😄Innovative</p>
+            <p>😄User-Friendly</p>
+            <p>😄Scalable</p>
+            <p>😄Responsive</p>
+            <p>😄UX/UI Design</p>
+            <p>😄Backend</p>
+            <p>😄Frontend</p>
+          </div>
+        
         </div>
         <img className='w-60 anime-2' src={man} alt="man in a hood" />
         <div className='acheivements m-10 text-center anime-r border myshadow'>
           <h1 className='font-bold myshadow btn-1 mb-5 anime'>Achievements</h1>
-          <p>🎯 20+ Clients</p>
-          <p>🎯 50+ Projects</p>
-          <p>🎯 5⭐ rate on fiverr</p>
-          <p>🎯 50K+ Lines of code</p>
+          <div className='text-left'>
+            <p>🎯 20+ Clients</p>
+            <p>🎯 50+ Projects</p>
+            <p>🎯 5⭐ rate on fiverr</p>
+            <p>🎯 50K+ Lines of code</p>
+          </div>
+        
         </div>
       </div>
     </div>
