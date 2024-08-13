@@ -10,14 +10,14 @@ const Footer = () => {
       <div className='p-5'>
            <Link to="/"><img src={logo} alt="logo" /></Link> 
       </div>
-      <div className='flex justify-around items-center px-5'>
+      <div className='flex justify-center items-center px-5'>
         <div className='flex-grow basis-0'>
           <h4 className='text-left'>Expertise</h4>
           <ul>
-             <li className='extra-small'> <Link to="/projects">JavaScript & React</Link> </li>
+             <li className='extra-small'> <Link to="/projects">JavaScript &React</Link> </li>
              <li className='extra-small'> <Link to="/projects">HTML & CSS</Link></li>
              <li className='extra-small'> <Link to="/about">Node.js & Express</Link></li>
-             <li className='extra-small'> <Link to="/contact">Figma & Adobe XD</Link></li>
+             <li className='extra-small'> <Link to="/contact">Figma & Adobe</Link></li>
           </ul>
         </div>
         <div className='flex-grow basis-0 p-5'>
