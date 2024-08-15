@@ -27,8 +27,8 @@ const Projects = () => {
         title: 'Job Nest',
         description: 'A job search engine that uses AI to match candidates with their ideal job based on skills, preferences, and experiences.',
         imageUrl: savefood, // You might want to replace this with the actual image for Job Nest
-        deployedLink: 'https://jobnest.com',
-        githubLink: 'https://github.com/yourusername/jobnest'
+        deployedLink: 'https://joevibe.vercel.app/',
+        githubLink: 'https://github.com/jeylanab/joeVibe'
       },
       {
         title: 'JoeVibe',
