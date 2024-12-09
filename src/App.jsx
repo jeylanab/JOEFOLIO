@@ -7,6 +7,8 @@ import Projects from "./component/Projects";
 import Contact from "./component/Contact" 
 import Skills from "./component/Skills";
 import About from "./component/About";
+import 'font-awesome/css/font-awesome.min.css';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => (
