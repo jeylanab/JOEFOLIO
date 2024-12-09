@@ -1,16 +1,18 @@
 import React from 'react'
 import { footerLinks } from '../constants'
 import { Link } from 'react-router-dom'
+import flogo from "../Assets/flogo.svg"
 
 const Footer = () => {
   return (
-    <div className='bg-gradient-to-r from-indigo-900 to-purple-800 text-white text-center w-full py-12'>
-      <h1 className='text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'>
-        JOEFOLIO
+    <div className='bg-black text-white text-center w-full py-12'>
+      <h1  className='text-4xl flex justify-center font-extrabold  text-white'>
+        <img src={flogo} alt="" />
+        EFOLIO
       </h1>
       <div className='flex lg:flex-row flex-col justify-center items-center mt-6'>
         {footerLinks.map((value, index) => (
-          <Link key={index} className='mx-6 my-2 text-lg font-medium hover:text-yellow-500 transition duration-300 ease-in-out' to={value.link}>
+          <Link key={index} className='mx-6 my-2 text-lg font-medium hover:text-green-500 transition duration-300 ease-in-out' to={value.link}>
             {value.title}
           </Link>
         ))}
