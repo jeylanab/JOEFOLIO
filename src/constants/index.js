@@ -15,6 +15,10 @@ export const navLinks = [
     link: "/skills"
   },
   {
+    title: "Service",
+    link: "/services"
+  },
+  {
     title: "About",
     link: "/about"
   }
