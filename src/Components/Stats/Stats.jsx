@@ -23,7 +23,7 @@ const Stats = () => {
             <h2 className="text-5xl font-extrabold opacity-95">
               {inView ? <CountUp end={stat.value} duration={2} /> : '0'}+
             </h2>
-            <p className="text-lg mt-2 opacity-70">{stat.label}</p>
+            <p className="text-lg mt-2 opacity-60">{stat.label}</p>
           </div>
         ))}
       </div>

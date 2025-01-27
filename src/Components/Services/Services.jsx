@@ -5,7 +5,7 @@ const services = [
   {
     id: 1,
     title: "Web Development",
-    description: "Building modern and efficient web applications using React, JavaScript.",
+    description: "Building modern and efficient web applications using HTML5 CSS JavaScript React and Other Latest Technologies .",
     color: "text-white",
     hoverColor: "text-green-500",
   },
@@ -19,7 +19,7 @@ const services = [
   {
     id: 3,
     title: "UI/UX Design",
-    description: "Designing user-centric, visually appealing interfaces.",
+    description: "Designing user-centric, visually appealing interfaces using tools like Figma and Adobe XD.",
     color: "text-white",
     hoverColor: "text-green-500",
   },
@@ -56,7 +56,7 @@ const ServicesSection = () => {
                 >
                   {service.title}
                 </h3>
-            <p className="opacity-80">{service.description}</p>
+            <p className="opacity-60">{service.description}</p>
           </div>
         ))}
       </div>
