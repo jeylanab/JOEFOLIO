@@ -11,8 +11,8 @@ const Stats = () => {
   ];
 
   const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.8,
+    triggerOnce: false,
+    threshold: 0.5,
   });
 
   return (
@@ -26,8 +26,7 @@ const Stats = () => {
             <p className="text-lg mt-2 opacity-70">{stat.label}</p>
           </div>
         ))}
-          </div>
-          
+      </div>
     </div>
   );
 };
