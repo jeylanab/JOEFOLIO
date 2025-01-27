@@ -20,7 +20,6 @@ import {
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
-
 const tabs = ["Experience", "Education", "Skills", "About me"];
 
 // Placeholder data
@@ -125,9 +124,10 @@ const Experiences = () => {
             </div>
           )}
           {activeTab === "Skills" && (
-            <div className="grid grid-cols-3 md:grid-cols-4 gap-4 max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
-              {[...placeholderData.Skills.Languages, ...placeholderData.Skills.Tools].map(
-                (skill, index) => (
+            <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
+              <h3 className="text-2xl font-semibold text-green-500 mb-4">Languages</h3>
+              <div className="grid grid-cols-3 md:grid-cols-4 gap-4 mb-8">
+                {placeholderData.Skills.Languages.map((skill, index) => (
                   <div
                     key={index}
                     className="relative group bg-gray-800 rounded-lg p-4 flex justify-center items-center"
@@ -139,8 +139,24 @@ const Experiences = () => {
                       <p className="text-white font-medium">{skill.name}</p>
                     </div>
                   </div>
-                )
-              )}
+                ))}
+              </div>
+              <h3 className="text-2xl font-semibold text-green-500 mb-4">Tools & Technologies</h3>
+              <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+                {placeholderData.Skills.Tools.map((skill, index) => (
+                  <div
+                    key={index}
+                    className="relative group bg-gray-800 rounded-lg p-4 flex justify-center items-center"
+                  >
+                    <div className="text-[#2dda0a] text-4xl">
+                      {skill.icon}
+                    </div>
+                    <div className="absolute inset-0 bg-gray-900 bg-opacity-80 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <p className="text-white font-medium">{skill.name}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {activeTab === "About me" && (
