@@ -9,7 +9,7 @@ export const Hero = () => {
         {/* Image Container (First on Small Screens) */}
         <div className="image-container order-1 lg:order-2 lg:w-1/2 flex justify-center lg:justify-end">
           <img
-            className="w-100 md:w-64 lg:w-[500px] xl:w-[600px] rounded-full"
+            className="w-80 md:w-64 lg:w-[400px] xl:w-[600px] rounded-full"
             src={joeman}
             alt="Jeylan Abdo"
           />
