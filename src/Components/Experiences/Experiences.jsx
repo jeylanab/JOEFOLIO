@@ -67,7 +67,7 @@ const Experiences = () => {
   const [activeTab, setActiveTab] = useState("Experience");
 
   return (
-    <div className="bg-gray-900 text-gray-300 py-12 px-6 md:px-16">
+    <div className=" text-gray-300 py-12 px-6 md:px-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
         Why hire me?
       </h2>
@@ -81,7 +81,7 @@ const Experiences = () => {
               className={`w-full md:w-auto px-4 py-2 text-left rounded-lg ${
                 activeTab === tab
                   ? "bg-green-500 text-white"
-                  : "bg-gray-800 hover:bg-gray-700"
+                  : " "
               }`}
             >
               {tab}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../../Assets/logo.svg";
-import "./Navbar.css";
 import { navLinks } from "../../constants";
 
 export const Navbar = () => {
@@ -63,7 +62,7 @@ export const Navbar = () => {
             <li key={link.id}>
               <a
                 href={link.link}
-                className="transition-colors"
+                className="hover:text-yellow-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
               >
                 {link.title}
@@ -74,7 +73,7 @@ export const Navbar = () => {
 
         <div className="mt-10">
           <button
-            className="button-primary bg-yellow-500 px-6 py-3 rounded-lg text-lg"
+            className="button-primary bg-yellow-500 px-6 py-3 rounded-lg text-lg hover:bg-yellow-600"
             onClick={() => setIsMenuOpen(false)} // Close menu on button click
           >
             Hire Me
