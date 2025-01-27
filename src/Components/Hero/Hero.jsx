@@ -23,7 +23,7 @@ export const Hero = () => {
           <h2 className="text-4xl md:text-6xl font-normal">Hello I am</h2>
           <h1 className="text-5xl md:text-8xl font-extrabold">Jeylan Abdo</h1>
           <div>
-            <p className="text-sm md:text-base mt-6 opacity-55">
+            <p className="text-sm md:text-base mt-6 opacity-70">
               Full-stack software Developer, skilled in MERN stack development, UI/UX design, and building user-focused applications. Experienced through academic projects and internships.
             </p>
           </div>
