@@ -1,6 +1,8 @@
 import React from 'react';
 import joeman from '../../Assets/joeman.png';
+import joecv from '../../Assets/joecv.pdf';
 import './Hero.css';
+import { FaLinkedin, FaTwitter, FaGithub, FaInstagram } from 'react-icons/fa';
 
 export const Hero = () => {
   return (
@@ -22,9 +24,37 @@ export const Hero = () => {
           <h1 className="text-5xl md:text-8xl font-extrabold">Jeylan Abdo</h1>
           <div>
             <p className="text-sm md:text-base mt-6 opacity-55">
-              Full-stack software Developer, skilled in MERN stack development, UI/UX design, and building user-focused applications. Experienced through academic projects and internships .
+              Full-stack software Developer, skilled in MERN stack development, UI/UX design, and building user-focused applications. Experienced through academic projects and internships.
             </p>
           </div>
+
+                  <div className='flex'>
+                          <div className="mt-6 mr-5">
+            <a
+              href={joecv}
+              download
+              className="bg-[#2dda0a] primary-button text-white px-6 py-3 rounded-md shadow-lg hover:bg-green-600 transition duration-300"
+            >
+              Download CV
+            </a>
+          </div>
+          <div className="mt-6 flex justify-center lg:justify-start space-x-4">
+            <a href="https://www.linkedin.com/in/jeylan-tesi-53a746257/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-2xl text-[#2dda0a] hover:text-green-600 transition duration-300" />
+            </a>
+            <a href="https://x.com/jetu81" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="text-2xl text-[#2dda0a] hover:text-green-600 transition duration-300" />
+            </a>
+            <a href="https://github.com/jeylanab/" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="text-2xl text-[#2dda0a] hover:text-green-600 transition duration-300" />
+            </a>
+            <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-2xl text-[#2dda0a] hover:text-green-600 transition duration-300" />
+            </a>
+          </div>  
+                  
+                  </div>
+
         </div>
       </div>
     </div>
