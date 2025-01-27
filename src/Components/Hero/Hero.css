@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+  --primary-color: #fff;
+  --secondary-color:rgba(0, 0, 0, 0.981);
+  --tertiary-color: #2dda0a;
+  --other-color: #333;
+  --primary-font-family: "Oswald", serif;
+  --spacing-unit: 1rem;
+  --border-radius: 8px;
+}
+
+.hero{
+  font-family: var(--primary-font-family);
+}
+h1{
+color: var(--tertiary-color);
+font-family: var(--primary-font-family);
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import logo from "../Assets/logo.svg";
-import { navLinks } from "../constants";
+import logo from "../../Assets/logo.svg";
+import "./Navbar.css";
+import { navLinks } from "../../constants";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export const Navbar = () => {
       <div className="flex justify-between items-center mx-5 lg:mx-20 py-4">
         {/* Logo */}
         <div className="navbar__logo">
-          <img className="h-8 w-auto" src={logo} alt="Logo" />
+          <img className="h-10 w-auto" src={logo} alt="Logo" />
         </div>
 
         {/* Desktop Menu */}
@@ -21,14 +22,14 @@ export const Navbar = () => {
               <li key={link.id}>
                 <a
                   href={link.link}
-                  className="hover:text-yellow-500 transition-colors"
+                  className="transition-colors"
                 >
                   {link.title}
                 </a>
               </li>
             ))}
           </ul>
-          <div className="ml-5 button-primary bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-600">
+          <div className="ml-5 button-primary px-4 py-2 rounded-lg">
             Hire Me
           </div>
         </div>
@@ -62,7 +63,7 @@ export const Navbar = () => {
             <li key={link.id}>
               <a
                 href={link.link}
-                className="hover:text-yellow-500 transition-colors"
+                className="transition-colors"
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
               >
                 {link.title}
@@ -73,7 +74,7 @@ export const Navbar = () => {
 
         <div className="mt-10">
           <button
-            className="button-primary bg-yellow-500 px-6 py-3 rounded-lg text-lg hover:bg-yellow-600"
+            className="button-primary bg-yellow-500 px-6 py-3 rounded-lg text-lg"
             onClick={() => setIsMenuOpen(false)} // Close menu on button click
           >
             Hire Me

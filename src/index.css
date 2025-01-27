@@ -2,21 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body{
+:root {
+  --primary-color: #fff;
+  --secondary-color:rgba(0, 0, 0, 0.981);
+  --tertiary-color: #2dda0a;
+  --other-color: #333;
+  --primary-font-family: "Oswald", serif;;
+  --spacing-unit: 1rem;
+  --border-radius: 8px;
 
 }
 
+body{
+background-color: rgba(0, 0, 0, 0.981);
+color: #fff;
+}
+
 .button-primary{
-  background-color: #2dda0a;
-  color: #fff;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -24,4 +36,13 @@ body{
   transition: all 0.3s;
 }
 
+.button-primary:hover{
+  background-color: #2dda0abe;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 

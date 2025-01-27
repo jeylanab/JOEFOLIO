@@ -1,0 +1,11 @@
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+ul li a:hover{
+    background-color: #2dda0a;
+}
