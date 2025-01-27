@@ -73,12 +73,12 @@ const Experiences = () => {
       </h2>
       <div className="md:flex">
         {/* Left Tabs */}
-        <div className="flex md:flex-col gap-4 mb-8 md:mb-0 md:mr-8">
+        <div className="flex md:flex-col gap-4 mb-8 md:mb-0 md:mr-4">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`w-full md:w-auto px-4 py-2 text-left rounded-lg ${
+              className={`w-full md:w-auto px-2 py-2 text-left rounded-lg ${
                 activeTab === tab
                   ? "bg-green-500 text-white"
                   : " "

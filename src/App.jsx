@@ -7,7 +7,7 @@ import {Work} from "./Pages/Work";
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="sm:m-5 md:m-10 lg:mx-10">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
