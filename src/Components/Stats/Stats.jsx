@@ -26,7 +26,8 @@ const Stats = () => {
             <p className="text-lg mt-2 opacity-70">{stat.label}</p>
           </div>
         ))}
-      </div>
+          </div>
+          
     </div>
   );
 };
