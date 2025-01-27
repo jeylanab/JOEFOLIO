@@ -3,6 +3,7 @@ import { Navbar } from '../Components/Navbar/Navbar'
 import { Hero } from '../Components/Hero/Hero'
 import Stats from '../Components/Stats/Stats'
 import Services from '../Components/Services/Services'
+import Experiences from '../Components/Experiences/Experiences'
 
 export const Home = () => {
   return (
@@ -10,7 +11,8 @@ export const Home = () => {
         <Navbar/>
       <Hero />
       <Stats />
-      <Services/>
+      <Services />
+      <Experiences/>
       </div>
   )
 }
