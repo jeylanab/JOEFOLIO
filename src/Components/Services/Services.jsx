@@ -4,15 +4,15 @@ import { ArrowRightCircle } from "lucide-react";
 const services = [
   {
     id: 1,
-    title: "React Development",
-    description: "Building modern and efficient web applications using React.",
+    title: "Web Development",
+    description: "Building modern and efficient web applications using React, JavaScript.",
     color: "text-white",
     hoverColor: "text-green-500",
   },
   {
     id: 2,
-    title: "React Native Development",
-    description: "Creating cross-platform mobile applications.",
+    title: "Software Development",
+    description: "Creating cross-platform mobile applications using different technologies including React Native and Kotlin.",
     color: "text-white",
     hoverColor: "text-green-500",
   },
@@ -42,7 +42,7 @@ const ServicesSection = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="p-6 border border-gray-700 rounded-lg shadow-lg transition-transform transform hover:scale-95"
+            className="p-6 border border-gray-700 rounded-lg shadow-lg transition-transform transform hover:animate-pulse"
           >
             <div className="flex justify-between items-center mb-4">
               <div className="flex flex-col  items-start gap-2">
