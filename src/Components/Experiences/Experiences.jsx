@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Experiences.css";
 import {
   SiHtml5,
   SiCss3,
@@ -73,14 +74,14 @@ const Experiences = () => {
       </h2>
       <div className="md:flex">
         {/* Left Tabs */}
-        <div className="flex md:flex-col gap-4 mb-8 md:mb-0 md:mr-4">
+        <div className="flex lg:w-1/4 md:flex-col border-lime-400 gap-4 mb-8 md:mb-0 md:mr-4">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`w-full md:w-auto px-2 py-2 text-left rounded-lg ${
+              className={`w-full md:w-auto px-2 py-2 text-left rounded-md ${
                 activeTab === tab
-                  ? "bg-green-500 text-white"
+                  ? "button-primary text-white"
                   : " "
               }`}
             >
@@ -92,7 +93,7 @@ const Experiences = () => {
         {/* Right Content */}
         <div className="flex-1">
           {activeTab === "Experience" && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-64 custom-scrollbar overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
               {placeholderData.Experience.map((exp, index) => (
                 <div
                   key={index}
@@ -108,7 +109,7 @@ const Experiences = () => {
             </div>
           )}
           {activeTab === "Education" && (
-            <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
+            <div className="max-h-64 overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
               {placeholderData.Education.map((edu, index) => (
                 <div
                   key={index}
@@ -124,7 +125,7 @@ const Experiences = () => {
             </div>
           )}
           {activeTab === "Skills" && (
-            <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
+            <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] custom-scrollbar scrollbar-track-gray-800">
               <h3 className="text-2xl font-semibold text-green-500 mb-4">Languages</h3>
               <div className="grid grid-cols-3 md:grid-cols-4 gap-4 mb-8">
                 {placeholderData.Skills.Languages.map((skill, index) => (
@@ -160,7 +161,15 @@ const Experiences = () => {
             </div>
           )}
           {activeTab === "About me" && (
-            <div className="p-4 border border-gray-700 rounded-lg shadow-md">
+            <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] custom-scrollbar scrollbar-track-gray-800">
+              <p className="text-gray-400">{placeholderData["About me"]}</p>
+              <p className="text-gray-400">{placeholderData["About me"]}</p>
+              <p className="text-gray-400">{placeholderData["About me"]}</p>
+              <p className="text-gray-400">{placeholderData["About me"]}</p>
+              <p className="text-gray-400">{placeholderData["About me"]}</p>
+              <p className="text-gray-400">{placeholderData["About me"]}</p>
+              <p className="text-gray-400">{placeholderData["About me"]}</p>
+              <p className="text-gray-400">{placeholderData["About me"]}</p>
               <p className="text-gray-400">{placeholderData["About me"]}</p>
             </div>
           )}

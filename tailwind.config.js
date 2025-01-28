@@ -26,6 +26,8 @@ export const theme = {
       typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
     },
     colors: {
+       scrollbarThumb: '#2dda0a',
+        scrollbarTrack: '#2a2a2a',
       primary: "#00040f",
       secondary: "#00f6ff",
       dimWhite: "rgba(255, 255, 255, 0.7)",
