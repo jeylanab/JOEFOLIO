@@ -90,7 +90,7 @@ const Experiences = () => {
           ))}
         </div>
 
-        {/* Right Content */}
+        {/* Right Content  of the experience */}
         <div className="flex-1">
           {activeTab === "Experience" && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-64 custom-scrollbar overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
