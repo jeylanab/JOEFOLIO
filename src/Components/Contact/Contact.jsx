@@ -8,8 +8,7 @@ const Contact = () => {
       <div className="bg-[#222] p-6 rounded-xl w-full md:w-2/3 max-w-lg shadow-lg">
         <h2 className="text-green-400 text-2xl font-semibold mb-4">Let's work together</h2>
         <p className="text-gray-400 text-sm mb-6">
-I’m available for Full-Time and Part-Time positions, freelance projects, collaborations, or any exciting opportunities. Feel free to reach out, and let's build something amazing together!        </p>
-
+           I’m available for Full-Time and Part-Time positions, freelance projects, collaborations, or any exciting opportunities. Feel free to reach out, and let's build something amazing together!        </p>
         <form className="space-y-4">
           <div className="flex gap-4">
             <input type="text" placeholder="Firstname" className="w-1/2 p-3 bg-[#111] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-green-400" />
