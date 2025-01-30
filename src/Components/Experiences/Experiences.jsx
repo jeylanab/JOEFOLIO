@@ -79,7 +79,7 @@ const Experiences = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`w-full md:w-auto px-2 py-2 text-left rounded-md ${
+              className={`w-full md:w-auto px-2 py-5 text-left rounded-md ${
                 activeTab === tab
                   ? "button-primary text-white"
                   : " "
@@ -93,7 +93,7 @@ const Experiences = () => {
         {/* Right Content  of the experience */}
         <div className="flex-1">
           {activeTab === "Experience" && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-64 custom-scrollbar overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-72 custom-scrollbar overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
               {placeholderData.Experience.map((exp, index) => (
                 <div
                   key={index}
@@ -109,7 +109,7 @@ const Experiences = () => {
             </div>
           )}
           {activeTab === "Education" && (
-            <div className="max-h-64 overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
+            <div className="max-h-72 overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-[#2dda0a] scrollbar-track-gray-800">
               {placeholderData.Education.map((edu, index) => (
                 <div
                   key={index}
@@ -125,7 +125,7 @@ const Experiences = () => {
             </div>
           )}
           {activeTab === "Skills" && (
-            <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] custom-scrollbar scrollbar-track-gray-800">
+            <div className="max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] custom-scrollbar scrollbar-track-gray-800">
               <h3 className="text-2xl font-semibold text-green-500 mb-4">Languages</h3>
               <div className="grid grid-cols-3 md:grid-cols-4 gap-4 mb-8">
                 {placeholderData.Skills.Languages.map((skill, index) => (
@@ -161,16 +161,11 @@ const Experiences = () => {
             </div>
           )}
           {activeTab === "About me" && (
-            <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] custom-scrollbar scrollbar-track-gray-800">
+            <div className="max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2dda0a] custom-scrollbar scrollbar-track-gray-800">
+              
               <p className="text-gray-400">{placeholderData["About me"]}</p>
-              <p className="text-gray-400">{placeholderData["About me"]}</p>
-              <p className="text-gray-400">{placeholderData["About me"]}</p>
-              <p className="text-gray-400">{placeholderData["About me"]}</p>
-              <p className="text-gray-400">{placeholderData["About me"]}</p>
-              <p className="text-gray-400">{placeholderData["About me"]}</p>
-              <p className="text-gray-400">{placeholderData["About me"]}</p>
-              <p className="text-gray-400">{placeholderData["About me"]}</p>
-              <p className="text-gray-400">{placeholderData["About me"]}</p>
+              
+
             </div>
           )}
         </div>
