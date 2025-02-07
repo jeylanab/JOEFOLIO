@@ -78,7 +78,7 @@ const ProjectList = () => {
 
   return (
     <motion.div 
-      className="w-full max-w-6xl mx-auto p-6 text-white flex flex-col gap-12"
+      className="w-full max-w-6xl mx-auto p-6 text-white flex my-10 flex-col gap-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
@@ -88,9 +88,9 @@ const ProjectList = () => {
         {categories.map((category) => (
           <button
             key={category}
-            className={`px-4 py-2 rounded-lg text-sm font-semibold border border-gray-400 ${
-              selectedCategory === category ? "bg-green-500 text-white" : "text-gray-300"
-            } hover:bg-green-400 hover:text-white transition`}
+            className={`px-4 py-2 rounded-lg md:text-sm lg:text-sm text-xs font-semibold border border-gray-400 ${
+              selectedCategory === category ? " bg-[#2dda0a]  text-white" : "text-gray-300"
+            } hover:opacity-90 hover:text-white transition`}
             onClick={() => setSelectedCategory(category)}
           >
             {category}
