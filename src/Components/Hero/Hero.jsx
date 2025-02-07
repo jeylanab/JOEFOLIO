@@ -29,19 +29,23 @@ export const Hero = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <motion.div 
-          className="image-container order-1 lg:order-2 lg:w-1/2 flex justify-center lg:justify-end"
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <motion.img
-            className="w-80 md:w-64 lg:w-[400px] xl:w-[600px] rounded-full"
-            src={joeman}
-            alt="Jeylan Abdo"
-            whileHover={{ scale: 1.05 }}
-          />
-        </motion.div>
+<motion.div 
+  className="image-container order-1 lg:order-2 lg:w-1/2 flex justify-center lg:justify-end"
+  initial={{ opacity: 0, scale: 0.8, y: 50 }}
+  animate={{ opacity: 1, scale: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+  whileHover={{ rotate: [0, 3, -3, 0], scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  <motion.img
+    className="w-80 md:w-64 lg:w-[400px] xl:w-[600px] rounded-full shadow-lg"
+    src={joeman}
+    alt="Jeylan Abdo"
+    whileHover={{ scale: 1.05, rotate: 3 }}
+    animate={{ y: [0, -5, 0], transition: { repeat: Infinity, duration: 3, ease: "easeInOut" } }}
+  />
+</motion.div>
+
 
         {/* Text Container */}
         <motion.div 
