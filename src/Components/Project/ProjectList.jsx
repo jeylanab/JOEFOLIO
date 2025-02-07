@@ -44,16 +44,7 @@ export const projects = [
     liveLink: "https://joevibe.vercel.app/",
     githubLink: "https://github.com/jeylanab/joeVib",
   },
-    {
-     id: 2,
-    category: "Mern Stack Development",
-    title: "JoeVibe",
-    description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
-    techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js and MongoDB",
-    gif: joevibe,
-    liveLink: "https://joevibe.vercel.app/",
-    githubLink: "https://github.com/jeylanab/joeVib",
-  },
+  
 ];
 
 const ProjectList = () => {
