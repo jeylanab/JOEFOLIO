@@ -8,7 +8,6 @@ export const Home = () => {
       <div className=''>
       <Hero />
       <Stats />
-      <Services />
       </div>
   )
 }
