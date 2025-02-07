@@ -1,120 +1,94 @@
-import React, { useState } from "react";
-import { FiExternalLink, FiGithub, FiFigma, FiSmartphone } from "react-icons/fi";
+import React from "react";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import roofly from "../../Assets/roofly.gif";
 import joevibe from "../../Assets/joevibe.gif";
-import { motion, AnimatePresence } from "framer-motion";
 
 export const projects = [
   {
     id: 1,
-    category: "Frontend Development",
-    title: "Modern Landing Page",
-    description: "A responsive landing page with animations and smooth scrolling.",
-    techStack: "React, TailwindCSS",
+    category: "Full Stack Development",
+    title: "Roofly",
+    description: "Roofly is a modern real estate platform for renting and selling properties with an intuitive user experience.",
+    techStack: "React.js, TailwindCSS, Firebase, Node.js,Express.js and Framer",
     gif: roofly,
-    liveLink: "https://your-live-demo1.com",
-    githubLink: "https://github.com/your-repo1",
+    liveLink: "https://roofly-livid.vercel.app/",
+    githubLink: "https://github.com/jeylanab/Roofly",
   },
   {
-    id: 2,
-    category: "Full Stack Development",
-    title: "Job Portal",
-    description: "A complete job posting platform with authentication and payments.",
-    techStack: "MERN Stack",
+     id: 2,
+    category: "Mern Stack Development",
+    title: "JoeVibe",
+    description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
+    techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js and MongoDB",
     gif: joevibe,
-    liveLink: "https://your-live-demo2.com",
-    githubLink: "https://github.com/your-repo2",
+    liveLink: "https://joevibe.vercel.app/",
+    githubLink: "https://github.com/jeylanab/joeVib",
+  },
+  {
+     id: 2,
+    category: "Mern Stack Development",
+    title: "JoeVibe",
+    description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
+    techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js and MongoDB",
+    gif: joevibe,
+    liveLink: "https://joevibe.vercel.app/",
+    githubLink: "https://github.com/jeylanab/joeVib",
+  },
+  {
+     id: 2,
+    category: "Mern Stack Development",
+    title: "JoeVibe",
+    description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
+    techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js and MongoDB",
+    gif: joevibe,
+    liveLink: "https://joevibe.vercel.app/",
+    githubLink: "https://github.com/jeylanab/joeVib",
+  },
+    {
+     id: 2,
+    category: "Mern Stack Development",
+    title: "JoeVibe",
+    description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
+    techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js and MongoDB",
+    gif: joevibe,
+    liveLink: "https://joevibe.vercel.app/",
+    githubLink: "https://github.com/jeylanab/joeVib",
   },
 ];
 
-const categoryColors = {
-  "Frontend Development": "border-blue-400 text-blue-300",
-  "Full Stack Development": "border-green-400 text-green-300",
-};
-
-const ProjectList = ({ projects }) => {
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
-  const project = projects[currentProjectIndex];
-
-  const nextProject = () => {
-    setCurrentProjectIndex((prev) => (prev + 1) % projects.length);
-  };
-
-  const prevProject = () => {
-    setCurrentProjectIndex((prev) => (prev - 1 + projects.length) % projects.length);
-  };
-
+const ProjectList = () => {
   return (
-    <div className="relative w-full max-w-4xl mx-auto p-6 text-white flex flex-col items-center">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={project.id}
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.5 }}
-          className="glassmorphism p-6 rounded-xl shadow-lg border border-gray-700 relative w-full max-w-lg"
+    <div className="w-full max-w-6xl mx-auto p-6 text-white flex flex-col gap-12">
+      {projects.map((project, index) => (
+        <div 
+          key={project.id} 
+          className={`flex flex-col md:flex-row items-center gap-6 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
         >
-          <span className={`text-sm font-semibold px-3 py-1 rounded-lg ${categoryColors[project.category]}`}>
-            {project.category}
-          </span>
-          <h3 className="text-3xl font-semibold mt-3 mb-4">{project.title}</h3>
-          <p className="text-gray-300 text-sm mb-4">{project.description}</p>
-          <p className="text-green-400 text-sm font-medium">{project.techStack}</p>
-
-          <div className="flex items-center gap-4 mt-4">
-            {project.liveLink && (
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-green-400"
-              >
-                <FiExternalLink size={24} />
-              </a>
-            )}
-            {project.githubLink && (
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-green-400"
-              >
-                <FiGithub size={24} />
-              </a>
-            )}
+          <div className="md:w-1/2 text-left">
+            <span className="text-sm font-semibold px-3 py-1 rounded-lg border border-gray-400 text-gray-300">
+              {project.category}
+            </span>
+            <h3 className="text-3xl font-semibold mt-3 mb-4">{project.title}</h3>
+            <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+            <p className="text-green-400 text-sm font-medium">{project.techStack}</p>
+            <div className="flex items-center gap-4 mt-4">
+              {project.liveLink && (
+                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400">
+                  <FiExternalLink size={24} />
+                </a>
+              )}
+              {project.githubLink && (
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400">
+                  <FiGithub size={24} />
+                </a>
+              )}
+            </div>
           </div>
-
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="mt-6 flex justify-center"
-          >
-            <img
-              src={project.gif}
-              alt={project.title}
-              className="rounded-lg shadow-lg w-full max-h-64 object-cover"
-            />
-          </motion.div>
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Navigation Controls */}
-      <div className="flex justify-between w-full max-w-lg mt-6">
-        <motion.button
-          onClick={prevProject}
-          whileHover={{ scale: 1.1 }}
-          className="bg-gray-800 p-3 rounded-full hover:bg-gray-600"
-        >
-          ◀
-        </motion.button>
-        <motion.button
-          onClick={nextProject}
-          whileHover={{ scale: 1.1 }}
-          className="bg-gray-800 p-3 rounded-full hover:bg-gray-600"
-        >
-          ▶
-        </motion.button>
-      </div>
+          <div className="md:w-1/2 flex justify-center">
+            <img src={project.gif} alt={project.title} className="rounded-lg shadow-lg w-full max-h-64 object-cover" />
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
