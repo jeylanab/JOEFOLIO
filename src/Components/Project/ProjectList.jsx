@@ -57,7 +57,7 @@ export const projects = [
   },
   {
     id: 2,
-    category: "Web Development",
+    category: "UX Design",
     title: "JoeVibe",
     description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
@@ -84,19 +84,20 @@ const ProjectList = () => {
       transition={{ duration: 2 }}
     >
       {/* Category Buttons */}
-      <div className="flex justify-center gap-4 mb-6">
-        {categories.map((category) => (
-          <button
-            key={category}
-            className={`px-4 py-2 rounded-lg md:text-sm lg:text-sm xl:text-md text-xs font-semibold border border-gray-400 ${
-              selectedCategory === category ? " bg-[#2dda0a]  text-white" : "text-gray-300"
-            } hover:opacity-90 hover:text-white transition`}
-            onClick={() => setSelectedCategory(category)}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+<div className="flex flex-wrap justify-center gap-4 mb-6 max-w-xs mx-auto md:max-w-none">
+  {categories.map((category) => (
+    <button
+      key={category}
+      className={`px-4 py-2 rounded-lg md:text-sm lg:text-md xl:text-md text-xs font-semibold border border-gray-400 ${
+        selectedCategory === category ? "bg-[#2dda0a] text-white" : "text-gray-300"
+      } hover:opacity-90 hover:text-white transition`}
+      onClick={() => setSelectedCategory(category)}
+    >
+      {category}
+    </button>
+  ))}
+</div>
+
       
       {/* Projects */}
       {filteredProjects.map((project, index) => (
