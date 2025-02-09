@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import joeman from '../../Assets/joeman.png';
 import joecv from '../../Assets/joecv.pdf';
+import TechStack from './TechStack';
 import './Hero.css';
 import { FaLinkedin, FaTwitter, FaGithub, FaInstagram } from 'react-icons/fa';
 
@@ -95,6 +96,7 @@ export const Hero = () => {
           </div>
         </motion.div>
       </motion.div>
+      <TechStack />
     </motion.div>
   );
 };

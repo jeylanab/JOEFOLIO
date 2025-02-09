@@ -1,0 +1,35 @@
+.card-design{
+  
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  .arrow{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  h3{
+    color: white;
+    font-weight: 700;
+  }
+  .num{
+    color: white;
+  }
+}
+
+.card-design:hover{
+ background-color:#2dda0a ;
+ color: black;
+ .arrow{
+   color: black;
+ }  
+h3{
+  color: black;
+  font-weight: 700;
+}
+.num{
+color: white;}
+}
