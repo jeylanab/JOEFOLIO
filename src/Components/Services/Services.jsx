@@ -17,18 +17,18 @@ const ServiceCard = ({ id, title, description, inView }) => {
       initial={{ opacity: 0, y: 30, scale: 0.8 }}
       animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
       transition={{ duration: 0.6, delay: id * 0.2, ease: "easeOut" }}
-      className="glassmorphism p-6 rounded-xl shadow-lg border border-gray-700 text-start w-66 card-design relative"
+      className="glassmorphism p-6 rounded-xl shadow-lg border border-gray-700 text-start w-66  relative"
     >
       <motion.div className="flex justify-between num items-start mb-2">
-        <motion.span className="text-5xl  font-bold " >
+        <motion.span className="text-5xl  text-white font-bold " >
           {`0${id}`}
         </motion.span>
         <motion.div whileHover={{ rotate: 90, scale: 1.2 }} transition={{ duration: 0.3 }}>
-          <ArrowRightCircle className="w-10 arrow h-10 text-gray-400 hover:text-green-500 transition-colors duration-300" />
+          <ArrowRightCircle className="w-10 arrow h-10 text-white hover:text-green-500 transition-colors duration-300" />
         </motion.div>
       </motion.div>
-      <h3 className="text-2xl text-start font-semibold text-green-400">{title}</h3>
-      <p className="opacity-80 text-start text-sm mt-2">{description}</p>
+      <h3 className="text-2xl text-start font-semibold text-black">{title}</h3>
+      <p className="opacity-80 text-black text-start text-sm mt-2">{description}</p>
     </motion.div>
   );
 };

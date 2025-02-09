@@ -139,7 +139,7 @@ const Experiences = () => {
                     key={index}
                     className="relative group bg-gray-800 rounded-lg p-4 flex justify-center items-center"
                   >
-                    <div className="text-[#2dda0a] text-4xl">
+                    <div className="text-[#e789ff] text-4xl">
                       {skill.icon}
                     </div>
                     <div className="absolute inset-0 bg-gray-900 bg-opacity-80 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -155,7 +155,7 @@ const Experiences = () => {
                     key={index}
                     className="relative group bg-gray-800 rounded-lg p-4 flex justify-center items-center"
                   >
-                    <div className="text-[#2dda0a] text-4xl">
+                    <div className="text-[#ed89ff] text-4xl">
                       {skill.icon}
                     </div>
                     <div className="absolute inset-0 bg-gray-900 bg-opacity-80 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
