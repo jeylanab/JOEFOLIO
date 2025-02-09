@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -13,17 +11,29 @@
 :root {
   --primary-color: #fff;
   --secondary-color:rgba(0, 0, 0, 0.981);
-  --tertiary-color: #2dda0a;
-  --other-color: #333;
+  --tertiary-color: #62e847;
+  --other-color: #0d0d0d;
   --primary-font-family: "Oswald", serif;;
   --spacing-unit: 1rem;
   --border-radius: 8px;
 
 }
+.montserrat-large {
+  font-family: "Montserrat", serif;
+
+}
 
 body{
-background-color: rgba(0, 0, 0, 0.981);
-color: #fff;
+
+background: hsla(283, 69%, 78%, 1);
+
+background: linear-gradient(135deg, hsla(283, 69%, 78%, 1) 20%, hsla(283, 64%, 80%, 1) 30%, hsla(283, 63%, 81%, 1) 43%, hsla(283, 46%, 86%, 1) 68%, hsla(104, 100%, 96%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(283, 69%, 78%, 1) 20%, hsla(283, 64%, 80%, 1) 30%, hsla(283, 63%, 81%, 1) 43%, hsla(283, 46%, 86%, 1) 68%, hsla(104, 100%, 96%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(283, 69%, 78%, 1) 20%, hsla(283, 64%, 80%, 1) 30%, hsla(283, 63%, 81%, 1) 43%, hsla(283, 46%, 86%, 1) 68%, hsla(104, 100%, 96%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#d8a1ee", endColorstr="#DBADED", GradientType=1 );color: #fff;
 }
 
 .button-primary{

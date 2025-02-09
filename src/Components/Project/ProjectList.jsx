@@ -78,7 +78,7 @@ const ProjectList = () => {
 
   return (
     <motion.div 
-      className="w-full max-w-6xl mx-auto p-6 text-white flex my-10 flex-col gap-12"
+      className="w-full max-w-6xl mx-auto p-6 text-white flex my-10 flex-col font-mono gap-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
@@ -88,8 +88,8 @@ const ProjectList = () => {
   {categories.map((category) => (
     <button
       key={category}
-      className={`px-4 py-2 rounded-lg md:text-sm lg:text-md xl:text-md text-xs font-semibold border border-gray-400 ${
-        selectedCategory === category ? "bg-[#2dda0a] text-white" : "text-gray-300"
+      className={`px-4 py-2 rounded-lg md:text-sm text-white lg:text-lg xl:text-md text-xs font-semibold border border-gray-400 ${
+        selectedCategory === category ? "bg-[#2dda0a] text-black" : "text-gray-300"
       } hover:opacity-90 hover:text-white transition`}
       onClick={() => setSelectedCategory(category)}
     >
@@ -110,12 +110,12 @@ const ProjectList = () => {
           viewport={{ infinity: true }}
         >
           <div className="md:w-1/2 text-left">
-            <span className="text-sm font-semibold px-3 py-1 rounded-lg border border-gray-400 text-gray-300">
+            <span className="text-md font-semibold px-3 py-1 rounded-md border border-gray-400 text-white">
               {project.category}
             </span>
-            <h3 className="text-3xl font-semibold mt-3 mb-4">{project.title}</h3>
-            <p className="text-gray-300 opacity-80 text-sm mb-4">{project.description}</p>
-            <p className="text-green-400 text-sm font-medium">{project.techStack}</p>
+            <h3 className="text-3xl font-bold mt-3 mb-4">{project.title}</h3>
+            <p className="text-black text-sm mb-4">{project.description}</p>
+            <p className="text-black text-sm font-semibold">{project.techStack}</p>
             <div className="flex items-center gap-4 mt-4">
               {project.liveLink && (
                 <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400">

@@ -9,7 +9,7 @@ import { FaLinkedin, FaTwitter, FaGithub, FaInstagram } from 'react-icons/fa';
 export const Hero = () => {
   return (
     <motion.div 
-      className="hero my-15 relative overflow-hidden"
+      className="hero my-20 relative overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -55,13 +55,13 @@ export const Hero = () => {
           animate={{ x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-lg md:text-2xl opacity-70 mt-10">Software Developer</p>
-          <h2 className="text-4xl md:text-6xl font-normal">Hello I am</h2>
-          <h1 className="text-5xl md:text-8xl font-extrabold">Jeylan Abdo</h1>
-          <p className="text-sm md:text-base mt-6 opacity-70">
+          <h2 className="text-4xl md:text-2xl font-mono text-black">Hello I'm</h2>
+          <h1 className="text-5xl md:text-7xl my-2 font-mono font-extrabold ">Jeylan Abdo</h1>
+          <h2 className="text-2xl md:text-4xl font-mono  font-extrabold mb-5 ">Software Developer</h2>
+          <span className="text-sm font-mono md:text-base mt-6">
             Full-stack software Developer, skilled in MERN stack development, UI/UX design, and building user-focused applications. Experienced through academic projects and internships.
-          </p>
-          <div className='flex sm:flex-col my-5 md:flex-row justify-center lg:justify-start'>
+          </span>
+          <div className='flex sm:flex-col my-5 my-5 md:flex-row justify-center lg:justify-start'>
             <motion.div 
               className="mt-6 mr-5"
               whileHover={{ scale: 1.1 }}
