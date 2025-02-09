@@ -23,7 +23,7 @@ export const projects = [
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
     gif: joevibe,
     liveLink: "https://joevibe.vercel.app/",
-    githubLink: "https://github.com/jeylanab/joeVib",
+    githubLink: "https://github.com/jeylanab/joeVibe",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ export const projects = [
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
     gif: joevibe,
     liveLink: "https://joevibe.vercel.app/",
-    githubLink: "https://github.com/jeylanab/joeVib",
+    githubLink: "https://github.com/jeylanab/joeVibe",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ export const projects = [
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
     gif: joevibe,
     liveLink: "https://joevibe.vercel.app/",
-    githubLink: "https://github.com/jeylanab/joeVib",
+    githubLink: "https://github.com/jeylanab/joeVibe",
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ export const projects = [
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
     gif: joevibe,
     liveLink: "https://joevibe.vercel.app/",
-    githubLink: "https://github.com/jeylanab/joeVib",
+    githubLink: "https://github.com/jeylanab/joeVibe",
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ export const projects = [
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
     gif: joevibe,
     liveLink: "https://joevibe.vercel.app/",
-    githubLink: "https://github.com/jeylanab/joeVib",
+    githubLink: "https://github.com/jeylanab/joeVibe",
   },
 ];
 

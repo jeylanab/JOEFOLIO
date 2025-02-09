@@ -41,7 +41,7 @@ const Stats = () => {
               initial={{ scale: 0.9 }}
               animate={inView ? { scale: 1.1 } : {}}
               transition={{ duration: 0.5, yoyo: Infinity }}
-              className="text-5xl font-extrabold text-white opacity-95"
+              className="text-6xl font-extrabold text-white opacity-95"
             >
               {inView ? <CountUp end={stat.value} duration={2} /> : "0"}+
             </motion.h2>
