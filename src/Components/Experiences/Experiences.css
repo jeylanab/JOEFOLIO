@@ -1,15 +1,15 @@
 .custom-scrollbar {
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #2dda0a #000000; /* Thumb and track colors for Firefox */
+  scrollbar-width:none; /* For Firefox */
+  scrollbar-color: #ca66f5 #f3f2f2; /* Thumb and track colors for Firefox */
 }
 
 .custom-scrollbar::-webkit-scrollbar {
-  width: 5px; /* Thin scrollbar width */
+  width: 1px; /* Thin scrollbar width */
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #2dda0a; /* Thumb color */
-  border-radius: 5px; /* Rounded corners */
+  background-color: #da0a8e; /* Thumb color */
+  border-radius: 2px; /* Rounded corners */
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {

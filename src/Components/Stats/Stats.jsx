@@ -7,8 +7,8 @@ const Stats = () => {
   const stats = [
     { value: 2, label: "Years of Experience" },
     { value: 15, label: "Projects Completed" },
-    { value: 8, label: "Technologies" },
-    { value: 500, label: "Code Commits" },
+    { value: 8, label: "Technologies Specialized" },
+    { value: 500, label: "Code Commits on Github" },
   ];
 
   const { ref, inView } = useInView({
