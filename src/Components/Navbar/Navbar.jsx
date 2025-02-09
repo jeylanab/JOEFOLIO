@@ -24,12 +24,13 @@ export const Navbar = () => {
       <div className="flex justify-between items-center mx-5 lg:mx-20 py-4">
         {/* Logo */}
         <div className="navbar__logo">
-          <img className="h-10 w-auto" src={logo} alt="Logo" />
+          <a href={navLinks[0].link}><img className="h-10 w-auto" src={logo} alt="Logo" /></a>
+          
         </div>
 
         {/* Menu Button */}
         <button onClick={() => setIsMenuOpen(true)} className="focus:outline-none">
-          <span className="material-icons text-3xl">menu</span>
+          <span className="material-icons text-4xl">menu</span>
         </button>
       </div>
 
@@ -44,9 +45,9 @@ export const Navbar = () => {
       >
         <button
           onClick={() => setIsMenuOpen(false)}
-          className="absolute top-5 right-5 text-3xl focus:outline-none"
+          className="absolute top-7 right-8 md:right-16 text-4xl focus:outline-none"
         >
-          <span className="material-icons">close</span>
+          <span className="material-icons text-4xl">close</span>
         </button>
 
         <ul className="space-y-8 text-xl text-center">

@@ -26,15 +26,20 @@ const tabs = ["Experience", "Education", "Skills", "About me"];
 // Placeholder data
 const placeholderData = {
   Experience: [
-    { year: "2022 - Present", role: "Full Stack Developer", company: "Tech Solutions Inc." },
-    { year: "Summer 2021", role: "Front-End Developer Intern", company: "Web Design Studio" },
-    { year: "2020 - 2021", role: "Freelance Web Developer", company: "E-commerce Startup" },
-    { year: "2019 - 2020", role: "Teaching Assistant", company: "Tech Academy" },
-    { year: "2018", role: "Web Development Intern", company: "Startup Lab" },
+    { year: "2024 - Present", role: "MERN Stack Developer", company: "Freelance / Upwork" },
+    { year: "Summer 2024", role: "Frontend Developer Intern", company: "Mirage Media Group" },
+    { year: "2023 - 2024", role: "Frontend Developer", company: "SaveFood Project" },
+    { year: "2023", role: "Frontend Developer", company: "Have A Word Project" },
+    { year: "2023", role: "Frontend Developer", company: "JoeVibe Project" },
+    { year: "2022 - 2023", role: "Frontend Developer Intern", company: "Web Design Studio (Bootcamp)" },
+    { year: "2022", role: "Freelance Web Developer", company: "E-commerce Startup" },
+    { year: "2021 - 2022", role: "Web Development Intern", company: "Startup Lab" },
   ],
   Education: [
-    { year: "2020", degree: "B.Sc. in Computer Science", institution: "XYZ University" },
-    { year: "2017", degree: "High School Diploma", institution: "ABC High School" },
+    { year: "2025", degree: "BCA in Computer Science", institution: "Maharishi Markandeshwar University" },
+    { year: "2021", degree: "Frontend Web Development Bootcamp (MERN Stack)", institution: "Cogrammer" },
+    { year: "2021", degree: "Frontend Web Development Bootcamp", institution: "edX" },
+    { year: "2018", degree: "High School Diploma", institution: "High School in Ethiopia" },
   ],
   Skills: {
     Languages: [
@@ -42,7 +47,7 @@ const placeholderData = {
       { name: "CSS3", icon: <SiCss3 /> },
       { name: "JavaScript", icon: <SiJavascript /> },
       { name: "TypeScript", icon: <SiTypescript /> },
-      { name: "Java", icon: <FaJava  /> },
+      { name: "Java", icon: <FaJava /> },
     ],
     Tools: [
       { name: "React.js", icon: <SiReact /> },
@@ -61,14 +66,15 @@ const placeholderData = {
     ],
   },
   "About me":
-    "I am a passionate software developer with expertise in full-stack development, mobile app development, and UI/UX design. My mission is to craft user-friendly applications and solve real-world problems using code.",
+    "I am a passionate software developer currently specializing in MERN stack development. I have experience in both front-end and back-end development, contributing to projects like JoeVibe, Have A Word, and SaveFood. I'm enthusiastic about creating user-friendly applications and solving real-world problems with modern web technologies. My goal is to grow as a full-stack engineer while collaborating on innovative projects.",
 };
+
 
 const Experiences = () => {
   const [activeTab, setActiveTab] = useState("Experience");
 
   return (
-    <div className=" text-gray-300 py-12 px-6 md:px-16">
+    <div className=" text-white py-12 px-6 md:px-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
         Why hire me?
       </h2>

@@ -9,7 +9,7 @@ import { FaLinkedin, FaTwitter, FaGithub, FaInstagram } from 'react-icons/fa';
 export const Hero = () => {
   return (
     <motion.div 
-      className="hero my-20 relative overflow-hidden"
+      className="hero mt-24 relative overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -69,7 +69,7 @@ export const Hero = () => {
               <a
                 href={joecv}
                 download
-                className="bg-[#2dda0a] primary-button text-white px-6 py-3 rounded-md shadow-lg hover:bg-green-600 transition duration-300"
+                className="bg-[#D8A1EE] px-6 py-4  font-mono rounded-lg text-lg hover:bg-[#b77dc8] transition-all"
               >
                 Download CV
               </a>

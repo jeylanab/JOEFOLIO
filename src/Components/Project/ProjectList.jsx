@@ -78,7 +78,7 @@ const ProjectList = () => {
 
   return (
     <motion.div 
-      className="w-full max-w-6xl mx-auto p-6 text-white flex my-10 flex-col font-mono gap-12"
+      className="w-full max-w-6xl mx-auto p-6 text-white flex my-24 flex-col font-mono gap-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
