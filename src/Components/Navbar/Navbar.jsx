@@ -1,53 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import logo from "../../Assets/logo.svg";
 import { navLinks } from "../../constants";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
-      {/* Large screen navigation */}
+    <nav
+      className={`fixed top-4 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "border-b border-gray-300/30" : "border-b border-transparent"
+      }`}
+    >
       <div className="flex justify-between items-center mx-5 lg:mx-20 py-4">
         {/* Logo */}
         <div className="navbar__logo">
           <img className="h-10 w-auto" src={logo} alt="Logo" />
         </div>
 
-        {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center">
-          <ul className="flex space-x-6">
-            {navLinks.map((link) => (
-              <li key={link.id}>
-                <a
-                  href={link.link}
-                  className="transition-colors"
-                >
-                  {link.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className="ml-5 button-primary px-4 py-2 rounded-lg">
-            Hire Me
-          </div>
-        </div>
-
-        {/* Mobile Hamburger Menu */}
-        <div className="lg:hidden">
-          <button
-            onClick={() => setIsMenuOpen(true)}
-            className="focus:outline-none"
-          >
-            <span className="material-icons text-3xl">menu</span>
-          </button>
-        </div>
+        {/* Menu Button */}
+        <button onClick={() => setIsMenuOpen(true)} className="focus:outline-none">
+          <span className="material-icons text-3xl">menu</span>
+        </button>
       </div>
 
-      {/* Mobile Full-Screen Menu */}
-      <div
-        className={`fixed inset-0 bg-gray-900 text-white flex flex-col items-center justify-center z-50 transition-transform duration-300 ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+      {/* Full-Screen Menu */}
+      <motion.div
+        initial={{ opacity: 0, y: "-100%" }}
+        animate={{ opacity: isMenuOpen ? 1 : 0, y: isMenuOpen ? 0 : "-100%" }}
+        transition={{ duration: 0.3 }}
+        className={`fixed inset-0 bg-gray-900/90 backdrop-blur-md text-white flex flex-col items-center justify-center z-50 transition-all ${
+          isMenuOpen ? "visible" : "invisible"
         }`}
       >
         <button
@@ -57,29 +49,37 @@ export const Navbar = () => {
           <span className="material-icons">close</span>
         </button>
 
-        <ul className="space-y-8 text-xl">
+        <ul className="space-y-8 text-xl text-center">
           {navLinks.map((link) => (
-            <li key={link.id}>
+            <motion.li
+              key={link.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: isMenuOpen ? 1 : 0, y: isMenuOpen ? 0 : 20 }}
+              transition={{ delay: 0.1 * link.id, duration: 0.3 }}
+            >
               <a
                 href={link.link}
-                className="hover:text-yellow-500 transition-colors"
-                onClick={() => setIsMenuOpen(false)} // Close menu on click
+                className="hover:text-[#D8A1EE] transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {link.title}
               </a>
-            </li>
+            </motion.li>
           ))}
         </ul>
 
         <div className="mt-10">
-          <button
-            className="button-primary bg-yellow-500 px-6 py-3 rounded-lg text-lg hover:bg-yellow-600"
-            onClick={() => setIsMenuOpen(false)} // Close menu on button click
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: isMenuOpen ? 1 : 0, scale: isMenuOpen ? 1 : 0.8 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            className="bg-[#D8A1EE] px-6 py-3 rounded-lg text-lg hover:bg-[#b77dc8] transition-all"
+            onClick={() => setIsMenuOpen(false)}
           >
             Hire Me
-          </button>
+          </motion.button>
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 };

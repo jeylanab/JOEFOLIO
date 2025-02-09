@@ -37,8 +37,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#d8a1ee", en
 }
 
 .button-primary{
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  background-color:#d684f6;
+  color: #e0e0e0;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -47,8 +47,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#d8a1ee", en
 }
 
 .button-primary:hover{
-  background-color: #2dda0abe;
-  color: #fff;
+  background-color: #ca6aef;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1.2rem;

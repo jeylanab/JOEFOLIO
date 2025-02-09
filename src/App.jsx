@@ -10,7 +10,7 @@ import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
     <Router>
-      <div className="sm:m-5 md:m-10 lg:mx-10">
+      <div className="sm:m-5 font-mono md:m-10 lg:mx-10">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
