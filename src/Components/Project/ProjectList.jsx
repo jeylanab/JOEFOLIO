@@ -103,7 +103,7 @@ const ProjectList = () => {
       {filteredProjects.map((project, index) => (
         <motion.div
           key={project.id}
-          className={`flex flex-col md:flex-row items-center gap-6 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
+          className={`flex flex-col md:flex-row items-center border-t-2 py-4 md:p-0 gap-6 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.8 }}

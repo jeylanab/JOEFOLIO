@@ -13,8 +13,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
 
         
-        {/* Social Links Section */}
-        <div className="flex gap-8 justify-center mb-6">
+        <div className="flex gap-8 justify-center mb-3">
           <motion.a
             href="https://github.com/jeylanab/"
             target="_blank"
@@ -47,9 +46,8 @@ const Footer = () => {
           </motion.a>
         </div>
 
-        {/* Footer Info */}
-        <div className="text-sm text-gray-200 opacity-80">
-          <p>Powered by React | Tailwind CSS | Framer Motion</p>
+        <div className="text-md text-gray-200 opacity-80">
+          <p className='font-mono'>CONTACTS</p>
         </div>
       </div>
     </motion.footer>
