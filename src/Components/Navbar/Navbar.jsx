@@ -69,17 +69,16 @@ export const Navbar = () => {
           ))}
         </ul>
 
-        <div className="mt-10">
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: isMenuOpen ? 1 : 0, scale: isMenuOpen ? 1 : 0.8 }}
-            transition={{ duration: 0.3, delay: 0.2 }}
-            className="bg-[#D8A1EE] px-6 py-3 rounded-lg text-lg hover:bg-[#b77dc8] transition-all"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Hire Me
-          </motion.button>
-        </div>
+<motion.button
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: isMenuOpen ? 1 : 0, scale: isMenuOpen ? 1 : 0.8 }}
+  transition={{ duration: 0.3, delay: 0.2 }}
+  className="bg-[#D8A1EE] px-6 py-3 my-3 rounded-lg text-lg hover:bg-[#b77dc8] transition-all"
+  onClick={() => window.open("https://www.linkedin.com/in/jeylan-tesi-53a746257/", "_blank")}
+>
+  Hire Me
+</motion.button>
+
       </motion.div>
     </nav>
   );
