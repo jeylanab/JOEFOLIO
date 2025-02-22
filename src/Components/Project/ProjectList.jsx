@@ -12,7 +12,7 @@ export const projects = [
     title: "Roofly",
     description: "Roofly is a modern real estate platform for renting and selling properties with an intuitive user experience.",
     techStack: "React.js, TailwindCSS, Firebase, Node.js, Express.js, and Framer",
-    gif: rooflyImage, // Using normal image
+    gif: rooflyImage,
     liveLink: "https://roofly-livid.vercel.app/",
     githubLink: "https://github.com/jeylanab/Roofly",
   },
@@ -22,37 +22,37 @@ export const projects = [
     title: "JoeVibe",
     description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: joevibeImage, // Using normal image
+    gif: joevibeImage,
     liveLink: "https://joevibe.vercel.app/",
     githubLink: "https://github.com/jeylanab/joeVibe",
   },
   {
-    id: 3, // Fixed the ID for uniqueness
+    id: 3, 
     category: "Web Development",
     title: "HooJoe Bank",
     description: "HoeJoe is a user-friendly landing page for a banking system that showcases an intuitive and modern design.",
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: hoobankImage, // Using normal image
+    gif: hoobankImage, 
     liveLink: "https://hoojoebank.netlify.app/",
     githubLink: "https://github.com/jeylanab/JOOBANK",
   },
   {
-    id: 4, // Fixed the ID for uniqueness
+    id: 4, 
     category: "Web Development",
     title: "JoeVibe",
     description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: joevibeImage, // Using normal image
+    gif: joevibeImage,
     liveLink: "https://joevibe.vercel.app/",
     githubLink: "https://github.com/jeylanab/joeVibe",
   },
   {
-    id: 5, // Fixed the ID for uniqueness
+    id: 5, 
     category: "UX Design",
     title: "JoeVibe",
     description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: joevibeImage, // Using normal image
+    gif: joevibeImage, 
     liveLink: "https://joevibe.vercel.app/",
     githubLink: "https://github.com/jeylanab/joeVibe",
   },
