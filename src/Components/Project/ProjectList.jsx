@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-import roofly from "../../Assets/roofly.gif";
-import joevibe from "../../Assets/joevibe.gif";
+import rooflyImage from "../../Assets/roofly.png";
+import joevibeImage from "../../Assets/joevibe.png"; 
+import hoobankImage from "../../Assets/hoobank.png"; 
 
 export const projects = [
   {
@@ -11,7 +12,7 @@ export const projects = [
     title: "Roofly",
     description: "Roofly is a modern real estate platform for renting and selling properties with an intuitive user experience.",
     techStack: "React.js, TailwindCSS, Firebase, Node.js, Express.js, and Framer",
-    gif: roofly,
+    gif: rooflyImage, // Using normal image
     liveLink: "https://roofly-livid.vercel.app/",
     githubLink: "https://github.com/jeylanab/Roofly",
   },
@@ -21,47 +22,37 @@ export const projects = [
     title: "JoeVibe",
     description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: joevibe,
+    gif: joevibeImage, // Using normal image
     liveLink: "https://joevibe.vercel.app/",
     githubLink: "https://github.com/jeylanab/joeVibe",
   },
   {
-    id: 2,
+    id: 3, // Fixed the ID for uniqueness
+    category: "Web Development",
+    title: "HooJoe Bank",
+    description: "HoeJoe is a user-friendly landing page for a banking system that showcases an intuitive and modern design.",
+    techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
+    gif: hoobankImage, // Using normal image
+    liveLink: "https://hoojoebank.netlify.app/",
+    githubLink: "https://github.com/jeylanab/JOOBANK",
+  },
+  {
+    id: 4, // Fixed the ID for uniqueness
     category: "Web Development",
     title: "JoeVibe",
     description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: joevibe,
+    gif: joevibeImage, // Using normal image
     liveLink: "https://joevibe.vercel.app/",
     githubLink: "https://github.com/jeylanab/joeVibe",
   },
   {
-    id: 2,
-    category: "Web Development",
-    title: "JoeVibe",
-    description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
-    techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: joevibe,
-    liveLink: "https://joevibe.vercel.app/",
-    githubLink: "https://github.com/jeylanab/joeVibe",
-  },
-  {
-    id: 2,
-    category: "Web Development",
-    title: "JoeVibe",
-    description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
-    techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: joevibe,
-    liveLink: "https://joevibe.vercel.app/",
-    githubLink: "https://github.com/jeylanab/joeVibe",
-  },
-  {
-    id: 2,
+    id: 5, // Fixed the ID for uniqueness
     category: "UX Design",
     title: "JoeVibe",
     description: "JoeVibe is a feature-rich e-commerce platform offering a seamless shopping experience.",
     techStack: "JavaScript, HTML5, CSS, React.js, TailwindCSS, Node.js, Express.js, and MongoDB",
-    gif: joevibe,
+    gif: joevibeImage, // Using normal image
     liveLink: "https://joevibe.vercel.app/",
     githubLink: "https://github.com/jeylanab/joeVibe",
   },
@@ -84,21 +75,20 @@ const ProjectList = () => {
       transition={{ duration: 2 }}
     >
       {/* Category Buttons */}
-<div className="flex flex-wrap justify-center gap-4 mb-6 max-w-xs mx-auto md:max-w-none">
-  {categories.map((category) => (
-    <button
-      key={category}
-      className={`px-4 py-2 rounded-lg md:text-sm text-white lg:text-lg xl:text-md text-xs font-semibold border border-gray-400 ${
-        selectedCategory === category ? "bg-[#2dda0a] text-black" : "text-gray-300"
-      } hover:opacity-90 hover:text-white transition`}
-      onClick={() => setSelectedCategory(category)}
-    >
-      {category}
-    </button>
-  ))}
-</div>
+      <div className="flex flex-wrap justify-center gap-4 mb-6 max-w-xs mx-auto md:max-w-none">
+        {categories.map((category) => (
+          <button
+            key={category}
+            className={`px-4 py-2 rounded-lg md:text-sm text-white lg:text-lg xl:text-md text-xs font-semibold border border-gray-400 ${
+              selectedCategory === category ? "bg-[#2dda0a] text-black" : "text-gray-300"
+            } hover:opacity-90 hover:text-white transition`}
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
 
-      
       {/* Projects */}
       {filteredProjects.map((project, index) => (
         <motion.div
@@ -131,7 +121,7 @@ const ProjectList = () => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <motion.img 
-              src={project.gif} 
+              src={project.gif} // Using normal image
               alt={project.title} 
               className="rounded-md shadow-lg w-full max-h-64 object-cover" 
               initial={{ scale: 0.9 }}
