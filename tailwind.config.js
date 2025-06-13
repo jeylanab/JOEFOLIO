@@ -28,10 +28,10 @@ export const theme = {
     colors: {
        scrollbarThumb: '#2dda0a',
         scrollbarTrack: '#2a2a2a',
-      primary: "#00040f",
-      secondary: "#00f6ff",
-      dimWhite: "rgba(255, 255, 255, 0.7)",
-      dimBlue: "rgba(9, 151, 124, 0.1)",
+        primary: '#00FF88', // neon green
+        bgDark: '#0A0A0A',
+        textPrimary: '#EDEDED',
+        textSecondary: '#A0A0A0',
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

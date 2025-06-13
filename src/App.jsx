@@ -7,6 +7,8 @@ import Info from "./Pages/Info";
 import Project from "./Pages/Project";
 import About from "./Pages/About";
 import Footer from "./Components/Footer/Footer";
+import background from "./Assets/background.svg";
+
 const App = () => {
   return (
     <Router>
